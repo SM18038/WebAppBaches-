@@ -38,13 +38,12 @@ public abstract class AbstractDataAccess<T> implements Serializable {
             if (em != null) {
                 em.persist(nuevo);
                 return;
-            }else{
+            } else {
                 throw new IllegalStateException("No se puede almacenar el registro");
             }
         }
         throw new IllegalArgumentException();
     }
-    
 
     /**
      * Buscar por id
@@ -146,7 +145,7 @@ public abstract class AbstractDataAccess<T> implements Serializable {
             cq.select(cb.count(cq.from(clase)));
             return em.createQuery(cq).getSingleResult();
         }
-        throw new IllegalStateException("No se puede obtener un ambito de persistencia");
+        throw new IllegalStateException();
 
     }
 
@@ -165,28 +164,27 @@ public abstract class AbstractDataAccess<T> implements Serializable {
             } catch (Exception ex) {
             }
             if (em != null) {
-                try {
-                    if (!em.contains(id)) {
-                        id = em.merge(id);
-                    }
-                    em.remove(id);
-                    return;
-                } catch (Exception e) {
-                    throw new IllegalStateException("No se puede eliminar el registro", e);
+
+                if (!em.contains(id)) {
+                    id = em.merge(id);
                 }
+                em.remove(id);
+                return;
             }
+
+            throw new IllegalStateException("El entity manager era nulo");
+
         }
         throw new IllegalArgumentException("El objeto a eliminar es nulo");
 
     }
 
     /**
-     * 
+     *
      * @param nuevo
      * @throws IllegalArgumentException
-     * @throws IllegalStateException 
+     * @throws IllegalStateException
      */
-    
     public void modificar(T nuevo) throws IllegalArgumentException, IllegalStateException {
         if (nuevo != null) {
             EntityManager em = null;
