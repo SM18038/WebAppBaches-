@@ -4,7 +4,7 @@
 
 <!-- https://docs.payara.fish/community/docs/documentation/payara-server/app-deployment/deployment-descriptors.html -->
 <resources>
-    <jdbc-resource jndi-name="jdbc/baches" pool-name="baches">
+    <jdbc-resource jndi-name="jdbc/bachesTPI" pool-name="baches">
         <description/>
     </jdbc-resource>
     <jdbc-connection-pool
