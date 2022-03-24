@@ -3,6 +3,8 @@ package com.mycompany.baches.control;
 import java.io.Serializable;
 import java.util.Collections;
 import java.util.List;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javax.persistence.EntityManager;
 import javax.persistence.TypedQuery;
 import javax.persistence.criteria.CriteriaBuilder;
@@ -155,7 +157,7 @@ public abstract class AbstractDataAccess<T> implements Serializable {
      * @throws IllegalStateException
      * @throws IllegalArgumentException
      */
-    public void eliminar(Object id) throws IllegalStateException, IllegalArgumentException {
+    public void eliminar(T id) throws IllegalStateException, IllegalArgumentException {
         if (id != null) {
             EntityManager em = null;
             try {
@@ -179,26 +181,26 @@ public abstract class AbstractDataAccess<T> implements Serializable {
     }
 
     /**
-     * Modificar una entidad
-     *
-     * @param id
-     * @throws IllegalStateException
+     * 
+     * @param nuevo
      * @throws IllegalArgumentException
+     * @throws IllegalStateException 
      */
-    public void modificar(Object id) throws IllegalStateException, IllegalArgumentException {
-        if (id != null) {
+    
+    public void modificar(T nuevo) throws IllegalArgumentException, IllegalStateException {
+        if (nuevo != null) {
             EntityManager em = null;
             try {
                 em = this.getEntityManager();
-            } catch (Exception ex) {
+            } catch (Exception e) {
+                throw new IllegalStateException("No se puede obtener un ambito de persistencia");
             }
             if (em != null) {
-                em.getTransaction().begin();
-                id = em.merge(id);
-                em.getTransaction().commit();
+                em.merge(nuevo);
+                return;
+            } else {
+                throw new IllegalStateException("No se pudo modificar el registro");
             }
-            throw new IllegalStateException("No se puede obtener un ambito de persistencia");
-
         }
         throw new IllegalArgumentException();
 

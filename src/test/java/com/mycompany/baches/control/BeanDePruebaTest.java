@@ -5,7 +5,6 @@
  */
 package com.mycompany.baches.control;
 
-import javax.ejb.embeddable.EJBContainer;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 

@@ -251,13 +251,14 @@
                             <includes>
                                 <include>**/*IT.java</include>
                             </includes>
+                            <systemPropertyVariables>
+                                <arquillian.launch>payara-embedded-all</arquillian.launch>
+                            </systemPropertyVariables>
                         </configuration>
                     </execution>
                 </executions>
             </plugin>
 
-
-            
         </plugins>
     </build>
 </project>
