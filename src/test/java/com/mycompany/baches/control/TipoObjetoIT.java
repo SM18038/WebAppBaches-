@@ -38,19 +38,46 @@ public class TipoObjetoIT {
     TipoObjetoBean cut;
 
     @Test
+    public void testContar() throws Exception{
+        System.out.println("Contar");
+        assertNotNull(cut);
+        Long resultado = cut.contar();
+        assertNotNull(resultado);
+        System.out.println("Se encontraron " + resultado + " registros");
+    }
+    
+    @Test
     public void testCrear() throws Exception {
         System.out.println("Crear");
         assertNotNull(cut);
         TipoObjeto nuevo = new TipoObjeto();
         cut.crear(nuevo);
         TipoObjeto esperado = cut.findById(5);
+        Long contar = cut.contar();
+        System.out.println("Total: " + contar);
 
     }
 
     @Test
     public void testfindById() {
         System.out.println("findById");
+        assertNotNull(cut);
+        Integer id = 1;
+        TipoObjeto resultado = cut.findById(id);
+        System.out.println("Se encontro el resultado " + resultado.getActivo());
 
+    }
+    
+         @Test
+    public void testModificar() throws Exception {
+        System.out.println("modificar");
+        assertNotNull(cut);
+        int id = 2;
+        TipoObjeto nuevo = new TipoObjeto();
+        nuevo.setIdTipoObjeto(id);
+        TipoObjeto sinModificar = cut.findById(id);
+        cut.modificar(nuevo);
+        TipoObjeto modificado = cut.findById(id);
     }
 
     @Test
@@ -63,26 +90,27 @@ public class TipoObjetoIT {
         System.out.println("La lista posee " + resultado.size());
 
     }
+   
 
     @Test
     public void testfindRange() {
         System.out.println("findRange");
-
-    }
-
-    @Test
-    public void testContar() throws Exception {
-        System.out.println("contar");
-    }
-
-    @Test
-    public void testEliminar() throws Exception {
-        System.out.println("eliminar");
+        assertNotNull(cut);
+        int first = 1;
+        int pageSize = 3;
+        List<TipoObjeto> resultado = cut.findRange(first, pageSize);
+        assertNotNull(resultado);
+        assertTrue(!resultado.isEmpty());
+        System.out.println("Se encontraron " + resultado.size());
     }
     
     @Test
-    public void testModificar() throws Exception {
-        System.out.println("modificar");
+    public void testEliminar() throws Exception {
+        System.out.println("eliminar");
+        assertNotNull(cut);
+        TipoObjeto eliminado = new TipoObjeto();
+        eliminado.setIdTipoObjeto(2);
+        cut.eliminar(eliminado);        
     }
-
+    
     }
