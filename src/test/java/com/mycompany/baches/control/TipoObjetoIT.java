@@ -38,14 +38,14 @@ public class TipoObjetoIT {
     TipoObjetoBean cut;
 
     @Test
-    public void testContar() throws Exception{
+    public void testContar() throws Exception {
         System.out.println("Contar");
         assertNotNull(cut);
         Long resultado = cut.contar();
         assertNotNull(resultado);
         System.out.println("Se encontraron " + resultado + " registros");
     }
-    
+
     @Test
     public void testCrear() throws Exception {
         System.out.println("Crear");
@@ -67,8 +67,8 @@ public class TipoObjetoIT {
         System.out.println("Se encontro el resultado " + resultado.getActivo());
 
     }
-    
-         @Test
+
+    @Test
     public void testModificar() throws Exception {
         System.out.println("modificar");
         assertNotNull(cut);
@@ -90,7 +90,6 @@ public class TipoObjetoIT {
         System.out.println("La lista posee " + resultado.size());
 
     }
-   
 
     @Test
     public void testfindRange() {
@@ -103,14 +102,14 @@ public class TipoObjetoIT {
         assertTrue(!resultado.isEmpty());
         System.out.println("Se encontraron " + resultado.size());
     }
-    
+
     @Test
     public void testEliminar() throws Exception {
         System.out.println("eliminar");
         assertNotNull(cut);
         TipoObjeto eliminado = new TipoObjeto();
         eliminado.setIdTipoObjeto(2);
-        cut.eliminar(eliminado);        
+        cut.eliminar(eliminado);
     }
     
-    }
+}
