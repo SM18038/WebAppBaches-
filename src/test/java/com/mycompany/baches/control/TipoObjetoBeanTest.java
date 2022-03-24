@@ -46,6 +46,15 @@ public class TipoObjetoBeanTest {
         EntityManager mockEM = Mockito.mock(EntityManager.class);
         cut.em =mockEM;
         cut.crear(nuevo);
+        TipoObjetoBean espia = Mockito.spy(TipoObjetoBean.class);
+        espia.em = mockEM;
+        
+        Mockito.when(espia.getEntityManager()).thenThrow(NullPointerException.class);
+        try {
+            espia.crear(nuevo);
+        } catch (Exception e) {
+        }
+        Mockito.verify(espia, Mockito.times(1)).getEntityManager();
     }
 
     /**
@@ -170,6 +179,31 @@ public class TipoObjetoBeanTest {
         Mockito.verify(espia, Mockito.times(1)).getEntityManager();
         //fail("The test case is a prototype.");
     }
+    /**
+     * Test of generarConsultaBae method, of class TipoObjetoBean.
+     */
+    @Test
+    public void generarConsultaBase(EntityManager em) {
+        System.out.println("generarConsultaBase");
+        TipoObjetoBean cut = new TipoObjetoBean();
+        
+        EntityManager mockEM = Mockito.mock(EntityManager.class);
+        CriteriaBuilder mockCB = Mockito.mock(CriteriaBuilder.class);
+        CriteriaQuery mockCQ = Mockito.mock(CriteriaQuery.class);
+        TypedQuery mockTQ = Mockito.mock(TypedQuery.class);
+        Root mockR = Mockito.mock(Root.class);
+        
+         Mockito.when(mockEM.getCriteriaBuilder()).thenReturn(mockCB);
+         Mockito.when(mockCB.createQuery(TypedQuery.class)).thenReturn(mockCQ);
+         Mockito.when(mockCQ.from(TypedQuery.class)).thenReturn(mockR);
+         
+         
+        assertThrows(IllegalArgumentException.class, () -> {
+        cut.generarConsultaBase(null);
+        });
+
+        
+    }
 
     /**
      * Test of contar method, of class TipoObjetoBean.
@@ -224,7 +258,12 @@ public class TipoObjetoBeanTest {
     public void testEliminar() throws Exception {
         System.out.println("eliminar");
         EntityManager mockEM = Mockito.mock(EntityManager.class);
+        TipoObjeto id = new TipoObjeto();
         TipoObjetoBean cut = new TipoObjetoBean();
+        assertThrows(IllegalStateException.class, ()->{
+            cut.eliminar(id);
+        });
+        
         cut.em=mockEM;
         TipoObjeto eliminado = new TipoObjeto(1);
         cut.eliminar(eliminado);
@@ -241,6 +280,15 @@ public class TipoObjetoBeanTest {
             fail("El entity manager era nulo");
         } catch (Exception e) {
         }
+        TipoObjetoBean espia = Mockito.spy(TipoObjetoBean.class);
+        espia.em = mockEM;
+        
+        Mockito.when(espia.getEntityManager()).thenThrow(NullPointerException.class);
+        try {
+            espia.eliminar(eliminado);
+        } catch (Exception e) {
+        }
+        Mockito.verify(espia, Mockito.times(1)).getEntityManager();
         
         //fail("Esta prueba fallara");
     }
