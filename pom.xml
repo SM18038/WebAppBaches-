@@ -2,7 +2,7 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-    <groupId>com.mycompany</groupId> 
+    <groupId>com.mycompany</groupId>
     <artifactId>Baches</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>war</packaging>
@@ -23,7 +23,6 @@
         <payara.version>5.2022.1</payara.version>
         <arquillian-payara.version>2.4.6</arquillian-payara.version>
     </properties>
-    
     <dependencyManagement>
         <dependencies>
             <dependency>
@@ -35,45 +34,8 @@
             </dependency>
         </dependencies>
     </dependencyManagement>
-    
-    
     <dependencies>
         
-        <!--dependency>
-            <groupId>org.eclipse.persistence</groupId>
-            <artifactId>org.eclipse.persistence.core</artifactId>
-            <version>2.7.7</version>
-        </dependency>
-        <dependency>
-            <groupId>org.eclipse.persistence</groupId>
-            <artifactId>org.eclipse.persistence.asm</artifactId>
-            <version>2.7.7</version>
-        </dependency>
-        <dependency>
-            <groupId>org.eclipse.persistence</groupId>
-            <artifactId>org.eclipse.persistence.antlr</artifactId>
-            <version>2.7.7</version>
-        </dependency>
-        <dependency>
-            <groupId>org.eclipse.persistence</groupId>
-            <artifactId>org.eclipse.persistence.jpa</artifactId>
-            <version>2.7.7</version>
-        </dependency>
-        <dependency>
-            <groupId>org.eclipse.persistence</groupId>
-            <artifactId>org.eclipse.persistence.jpa.jpql</artifactId>
-            <version>2.7.7</version>
-        </dependency>
-        <dependency>
-            <groupId>org.eclipse.persistence</groupId>
-            <artifactId>org.eclipse.persistence.moxy</artifactId>
-            <version>2.7.7</version>
-        </dependency>
-        <dependency>
-            <groupId>org.eclipse.persistence</groupId>
-            <artifactId>javax.persistence</artifactId>
-            <version>2.2.1</version>
-        </dependency-->
         <dependency>
             <groupId>org.junit.jupiter</groupId>
             <artifactId>junit-jupiter-api</artifactId>
@@ -104,14 +66,12 @@
             <version>${mockito-core.version}</version>
             <scope>test</scope>
         </dependency>
-        
         <dependency>
             <groupId>org.jboss.arquillian.junit5</groupId>
-            <artifactId>arquillian-junit5-container</artifactId>
-            <scope>test</scope>
+            <artifactId>arquillian-junit5-container</artifactId>   
+            <scope>test</scope> 
         </dependency>
     </dependencies>
-    
     <profiles>
         <profile>
             <id>arquillian-payara</id>
@@ -134,8 +94,7 @@
             </dependencies>
         </profile>
     </profiles>
-    
-    <build>
+     <build>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
@@ -152,7 +111,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-war-plugin</artifactId>
-                <version>3.3.2</version>
+                <version>2.3</version>
                 <configuration>
                     <failOnMissingWebXml>false</failOnMissingWebXml>
                 </configuration>
@@ -163,10 +122,10 @@
                 <version>${jacoco.version}</version>
                 <executions>
                     <execution>
-                        <id>prepare-agent</id>
-                        <goals>
-                            <goal>prepare-agent</goal>
-                        </goals>
+                    <id>prepare-agent</id>
+                    <goals>
+                        <goal>prepare-agent</goal>
+                    </goals>
                     </execution>
                     <execution>
                         <phase>prepare-package</phase>
@@ -182,9 +141,9 @@
                             <goal>report</goal>
                         </goals>
                     </execution>
-                </executions> 
+                </executions>
                 
-            </plugin>        
+            </plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-dependency-plugin</artifactId>
@@ -211,30 +170,8 @@
                 </executions>
             </plugin>
             <plugin>
-                <groupId>org.apache.maven.plugins </groupId>
-                <artifactId>maven-surefire-plugin</artifactId>
-                <version>${maven-surefire-plugin.version}</version>
-                <executions>
-                    <execution>
-                        <id>default-test</id>
-                        <phase>test</phase>
-                        <goals>
-                            <goal>test</goal>
-                        </goals>
-                        <configuration>
-                            <excludes>
-                                <exclude>**/*IT.java</exclude>
-                            </excludes>
-                            <includes>
-                                <include>**/*Test.java</include>
-                            </includes>
-                        </configuration>
-                    </execution>
-                </executions>          
-            </plugin>
-            <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-failsafe-plugin</artifactId>
+                <artifactId>maven-failsafe-plugin</artifactId> 
                 <version>${maven-failsafe-plugin.version}</version>
                 <executions>
                     <execution>
@@ -251,14 +188,15 @@
                             <includes>
                                 <include>**/*IT.java</include>
                             </includes>
+                            
                             <systemPropertyVariables>
                                 <arquillian.launch>payara-embedded-all</arquillian.launch>
                             </systemPropertyVariables>
+                            
                         </configuration>
                     </execution>
                 </executions>
             </plugin>
-
         </plugins>
     </build>
 </project>

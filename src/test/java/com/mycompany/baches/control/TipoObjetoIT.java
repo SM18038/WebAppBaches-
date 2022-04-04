@@ -79,15 +79,15 @@ public class TipoObjetoIT {
         cut.modificar(nuevo);
         TipoObjeto modificado = cut.findById(id);
     }
-
+    
     @Test
     public void testFindAll() {
-        System.out.println("findAll");
-        assertNotNull(cut);
+        System.out.println("FindAll");
+        Assertions.assertNotNull(cut);
         List<TipoObjeto> resultado = cut.findAll();
-        assertNotNull(resultado);
-        assertTrue(!resultado.isEmpty());
-        System.out.println("La lista posee " + resultado.size());
+        Assertions.assertNotNull(resultado);
+        Assertions.assertTrue(!resultado.isEmpty());
+        System.out.println("La lista posee "+ resultado.size());
 
     }
 
