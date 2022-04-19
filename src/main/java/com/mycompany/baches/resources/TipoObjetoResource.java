@@ -12,8 +12,12 @@ import java.util.List;
 import java.util.concurrent.CompletableFuture;
 import javax.enterprise.context.RequestScoped;
 import javax.inject.Inject;
+import javax.ws.rs.DELETE;
 import javax.ws.rs.GET;
+import javax.ws.rs.POST;
+import javax.ws.rs.PUT;
 import javax.ws.rs.Path;
+import javax.ws.rs.PathParam;
 import javax.ws.rs.Produces;
 import javax.ws.rs.core.Response;
 
@@ -39,6 +43,34 @@ public class TipoObjetoResource implements Serializable{
                 .header("Total-Registros", total)
                 .build();
 
+    }
+    
+    @POST
+    public Response crear(TipoObjeto nuevo) {
+        toBean.crear(nuevo);
+        return Response.ok(nuevo)
+                .header("Registro-Creado", nuevo)
+                .build();
+    }
+
+    @PUT
+    public Response modificar(TipoObjeto act) {
+        toBean.modificar(act);
+        return Response.ok(act)
+                .header("Modificado", act)
+                .build();
+
+    }
+
+    @DELETE
+    @Path("{userId}")
+    public Response eliminar(@PathParam("userId") int id) {
+        TipoObjeto eliminar = new TipoObjeto();
+        eliminar.setIdTipoObjeto(id);
+        toBean.eliminar(eliminar);
+        return Response.ok(eliminar)
+                .header("ID eliminado", id)
+                .build();
     }
     
     @GET
