@@ -77,13 +77,11 @@ public abstract class AbstractDataAccess<T> implements Serializable {
         try {
             em = this.getEntityManager();
         } catch (Exception ex) {
-
         }
         if (em != null) {
-
-            TypedQuery tq = this.generarConsultaBase(em);
-            List salida = tq.getResultList();
-            if (salida != null) {
+            TypedQuery q = this.generarConsultaBase(em);
+            List salida = q.getResultList();
+            if(salida!=null){
                 return salida;
             }
             return Collections.EMPTY_LIST;

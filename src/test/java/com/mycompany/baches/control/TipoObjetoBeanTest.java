@@ -182,6 +182,7 @@ public class TipoObjetoBeanTest {
     /**
      * Test of generarConsultaBae method, of class TipoObjetoBean.
      */
+    /*
     @Test
     public void generarConsultaBase(EntityManager em) {
         System.out.println("generarConsultaBase");
@@ -204,6 +205,7 @@ public class TipoObjetoBeanTest {
 
         
     }
+    */
 
     /**
      * Test of contar method, of class TipoObjetoBean.
