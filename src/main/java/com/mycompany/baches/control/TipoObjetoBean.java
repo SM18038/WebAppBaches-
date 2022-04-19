@@ -24,5 +24,13 @@ public class TipoObjetoBean extends AbstractDataAccess<TipoObjeto> implements Se
     public TipoObjetoBean() {
         super(TipoObjeto.class);
     }
-    
+
+    @Override
+    public Long contar() throws IllegalStateException {
+        try {
+            Thread.sleep(2000);
+        } catch (Exception ex) {
+        }
+        return super.contar(); //To change body of generated methods, choose Tools | Templates.
+    }
 }

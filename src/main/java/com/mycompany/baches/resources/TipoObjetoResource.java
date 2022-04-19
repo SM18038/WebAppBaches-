@@ -7,7 +7,9 @@ package com.mycompany.baches.resources;
 
 import com.mycompany.baches.control.TipoObjetoBean;
 import com.mycompany.baches.entity.TipoObjeto;
+import java.io.Serializable;
 import java.util.List;
+import java.util.concurrent.CompletableFuture;
 import javax.enterprise.context.RequestScoped;
 import javax.inject.Inject;
 import javax.ws.rs.GET;
@@ -23,7 +25,7 @@ import javax.ws.rs.core.Response;
 @Path("tipoobjeto")
 @RequestScoped
 
-public class TipoObjetoResource {
+public class TipoObjetoResource implements Serializable{
     @Inject
     TipoObjetoBean toBean;
 
@@ -37,5 +39,11 @@ public class TipoObjetoResource {
                 .header("Total-Registros", total)
                 .build();
 
+    }
+    
+    @GET
+    @Path("contar")
+    public CompletableFuture<Long> contar(){
+        return CompletableFuture.supplyAsync(toBean::contar);
     }
 }
