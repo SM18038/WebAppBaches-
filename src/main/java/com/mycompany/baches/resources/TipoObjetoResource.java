@@ -13,28 +13,28 @@ import java.util.concurrent.CompletableFuture;
 import javax.enterprise.context.RequestScoped;
 import javax.inject.Inject;
 import javax.ws.rs.DELETE;
+import javax.ws.rs.DefaultValue;
 import javax.ws.rs.GET;
 import javax.ws.rs.POST;
 import javax.ws.rs.PUT;
 import javax.ws.rs.Path;
 import javax.ws.rs.PathParam;
 import javax.ws.rs.Produces;
+import javax.ws.rs.QueryParam;
 import javax.ws.rs.core.Response;
 
 /**
  *
  * @author adrian
  */
-
 @Path("tipoobjeto")
 @RequestScoped
 
-public class TipoObjetoResource implements Serializable{
+public class TipoObjetoResource implements Serializable {
+
     @Inject
     TipoObjetoBean toBean;
 
-    @GET
-    @Produces({"application/json; charset=UTF-8"})
     public Response findAll() {
         List<TipoObjeto> registros = toBean.findAll();
         Long total = toBean.contar();
@@ -44,7 +44,26 @@ public class TipoObjetoResource implements Serializable{
                 .build();
 
     }
-    
+
+    @GET
+    @Produces({"application/json; charset=UTF-8"})
+    public Response findRange(
+            @QueryParam(value = "first")
+            @DefaultValue(value = "0") int first,
+            @QueryParam(value = "pageSize")
+            @DefaultValue(value = "50") int pageSize) {
+        List<TipoObjeto> registros = toBean.findRange(first, pageSize);
+        Long total = toBean.contar();
+        return Response.ok(registros)
+                .header("Total-Registros", total)
+//                .header("Access-Control-Allow-Origin", "*")
+//                .header("Access-Control-Allow-Credentials", "true")
+//                .header("Access-Control-Allow-Headers", "origin,content-type,accept,authorization")
+//                .header("Access-Control-Allow-Methods", "GET, POST, PUT, DELETE, OPTIONS, HEAD")
+                
+                .build(); 
+    }
+
     @POST
     public Response crear(TipoObjeto nuevo) {
         toBean.crear(nuevo);
@@ -72,10 +91,10 @@ public class TipoObjetoResource implements Serializable{
                 .header("ID eliminado", id)
                 .build();
     }
-    
+
     @GET
     @Path("contar")
-    public CompletableFuture<Long> contar(){
+    public CompletableFuture<Long> contar() {
         return CompletableFuture.supplyAsync(toBean::contar);
     }
 }
