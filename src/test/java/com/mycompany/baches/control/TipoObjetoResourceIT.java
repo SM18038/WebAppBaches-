@@ -5,6 +5,7 @@
  */
 package com.mycompany.baches.control;
 
+import com.mycompany.baches.entity.TipoObjeto;
 import java.io.StringReader;
 import java.net.URL;
 import javax.json.Json;
@@ -27,6 +28,8 @@ import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import com.mycompany.baches.resources.JakartaRestConfiguration;
 import com.mycompany.baches.resources.TipoObjetoResource;
+import javax.ws.rs.client.Entity;
+import javax.ws.rs.core.MediaType;
 
 /**
  *
@@ -78,6 +81,30 @@ public class TipoObjetoResourceIT {
             System.out.println("ID: " + objeto.getInt("idTipoObjeto"));
         }
         System.out.println("\n\n");
+    }
+    
+    @Test
+    @RunAsClient
+    public void testCrear() {
+        System.out.println("\n\n");
+        System.out.println("Crear TipoObjeto");
+        TipoObjeto nuevo = new TipoObjeto();
+        nuevo.setActivo(Boolean.TRUE);
+
+        int resultadoEsperado = 200;
+        Client cliente = ClientBuilder.newClient();
+        WebTarget target = cliente.target(url.toString() + "resources/");
+        Response respuesta = target.path("tipoobjeto").request("application/json").post(Entity.entity(nuevo, MediaType.APPLICATION_JSON));
+        assertEquals(resultadoEsperado, respuesta.getStatus());
+        String registro = respuesta.getHeaderString("Registro-Creado");
+        assertNotEquals(null, registro);
+        String cuerpoString = respuesta.readEntity(String.class);
+        JsonReader lector = Json.createReader(new StringReader(cuerpoString));
+        JsonObject objeto = lector.readObject();
+        System.out.println("\n\n");
+        System.out.println("Creado " + objeto);
+        System.out.println("\n\n");
+
     }
 
 }
