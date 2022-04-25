@@ -30,6 +30,7 @@ import com.mycompany.baches.resources.JakartaRestConfiguration;
 import com.mycompany.baches.resources.TipoObjetoResource;
 import javax.ws.rs.client.Entity;
 import javax.ws.rs.core.MediaType;
+import org.junit.jupiter.api.Order;
 
 /**
  *
@@ -59,6 +60,7 @@ public class TipoObjetoResourceIT {
 
     @Test
     @RunAsClient
+    @Order(4)
     public void testFindAll() {
         System.out.println("\n\n");
         System.out.println("findAllTipoObjeto");
@@ -85,6 +87,7 @@ public class TipoObjetoResourceIT {
     
     @Test
     @RunAsClient
+    @Order(1)
     public void testCrear() {
         System.out.println("\n\n");
         System.out.println("Crear TipoObjeto");
@@ -108,6 +111,7 @@ public class TipoObjetoResourceIT {
     }
     @Test
     @RunAsClient
+    @Order(2)
     public void testModificar() {
         System.out.println("\n\n");
         System.out.println("Modificar TipoObjeto");
@@ -133,23 +137,29 @@ public class TipoObjetoResourceIT {
     
     @Test
     @RunAsClient
+    @Order(3)
     public void testEliminar(){
         System.out.println("\n\n");
+        System.out.println("\n\n");
+        System.out.println("--------------------------------------------------------------");
         System.out.println("Eliminar TipoObjeto");
         TipoObjeto nuevo = new TipoObjeto();
 
         int resultadoEsperado = 200;
         Client cliente = ClientBuilder.newClient();
         WebTarget target = cliente.target(url.toString() + "resources/");
-        Response respuesta = target.path("tipoobjeto/3").request("application/json").delete();
+        Response respuesta = target.path("tipoobjeto/2").request("application/json").delete();
         assertEquals(resultadoEsperado, respuesta.getStatus());
         String registro = respuesta.getHeaderString("ID-eliminado");
         assertNotEquals(null, registro);
         String cuerpoString = respuesta.readEntity(String.class);
         JsonReader lector = Json.createReader(new StringReader(cuerpoString));
         JsonObject objeto = lector.readObject();
+        
+        System.out.println("\n\n");
         System.out.println("\n\n");
         System.out.println("ID:" + objeto.getInt("idTipoObjeto")+" eliminado con exito");
+        System.out.println("\n\n");
         System.out.println("\n\n");
     }
 
