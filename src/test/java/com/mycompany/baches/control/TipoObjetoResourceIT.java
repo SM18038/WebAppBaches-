@@ -106,5 +106,29 @@ public class TipoObjetoResourceIT {
         System.out.println("\n\n");
 
     }
+    @Test
+    @RunAsClient
+    public void testModificar() {
+        System.out.println("\n\n");
+        System.out.println("Modificar TipoObjeto");
+        TipoObjeto nuevo = new TipoObjeto();
+        nuevo.setIdTipoObjeto(3);
+        nuevo.setActivo(Boolean.FALSE);
+
+        int resultadoEsperado = 200;
+        Client cliente = ClientBuilder.newClient();
+        WebTarget target = cliente.target(url.toString() + "resources/");
+        Response respuesta = target.path("tipoobjeto").request("application/json").put(Entity.entity(nuevo, MediaType.APPLICATION_JSON));
+        assertEquals(resultadoEsperado, respuesta.getStatus());
+        String registro = respuesta.getHeaderString("Modificado");
+        assertNotEquals(null, registro);
+        String cuerpoString = respuesta.readEntity(String.class);
+        JsonReader lector = Json.createReader(new StringReader(cuerpoString));
+        JsonObject objeto = lector.readObject();
+        System.out.println("\n\n");
+        System.out.println("Modificado " + objeto);
+        System.out.println("\n\n");
+
+    }
 
 }
