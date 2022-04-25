@@ -232,7 +232,7 @@ public class TipoObjetoBeanTest {
         cut.em=mockEM;
         Long resultado = cut.contar();
         assertNotNull(resultado);
-        assertEquals(esperado, resultado);
+        assertEquals(esperado, -1);
         
         try {
             cut.em=null;
