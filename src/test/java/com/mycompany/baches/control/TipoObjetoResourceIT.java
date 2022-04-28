@@ -30,13 +30,16 @@ import com.mycompany.baches.resources.JakartaRestConfiguration;
 import com.mycompany.baches.resources.TipoObjetoResource;
 import javax.ws.rs.client.Entity;
 import javax.ws.rs.core.MediaType;
+import org.junit.jupiter.api.MethodOrderer;
 import org.junit.jupiter.api.Order;
+import org.junit.jupiter.api.TestMethodOrder;
 
 /**
  *
  * @author adrian
  */
 @ExtendWith(ArquillianExtension.class)
+@TestMethodOrder(MethodOrderer.OrderAnnotation.class)
 public class TipoObjetoResourceIT {
 
     @Deployment
@@ -62,7 +65,7 @@ public class TipoObjetoResourceIT {
     @RunAsClient
     @Order(4)
     public void testFindAll() {
-        System.out.println("\n\n");
+        System.out.println("\n\n*************************************************************");
         System.out.println("findAllTipoObjeto");
         int resultadoEsperado = 200;
         Client cliente = ClientBuilder.newClient();
@@ -77,7 +80,6 @@ public class TipoObjetoResourceIT {
         int totalRegistros = listaJson.size();
         assertTrue(totalRegistros > 0);
         System.out.println("\n\n");
-        System.out.println("\n\n");
         for (int i = 0; i < listaJson.size(); i++) {
             JsonObject objeto = listaJson.getJsonObject(i);
             System.out.println("ID: " + objeto.getInt("idTipoObjeto"));
@@ -89,7 +91,7 @@ public class TipoObjetoResourceIT {
     @RunAsClient
     @Order(1)
     public void testCrear() {
-        System.out.println("\n\n");
+        System.out.println("\n\n*************************************************************");
         System.out.println("Crear TipoObjeto");
         TipoObjeto nuevo = new TipoObjeto();
         nuevo.setActivo(Boolean.TRUE);
@@ -113,7 +115,7 @@ public class TipoObjetoResourceIT {
     @RunAsClient
     @Order(2)
     public void testModificar() {
-        System.out.println("\n\n");
+        System.out.println("\n\n*************************************************************");
         System.out.println("Modificar TipoObjeto");
         TipoObjeto nuevo = new TipoObjeto();
         nuevo.setIdTipoObjeto(3);
@@ -139,27 +141,22 @@ public class TipoObjetoResourceIT {
     @RunAsClient
     @Order(3)
     public void testEliminar(){
-        System.out.println("\n\n");
-        System.out.println("\n\n");
-        System.out.println("--------------------------------------------------------------");
+        System.out.println("\n\n*************************************************************");
         System.out.println("Eliminar TipoObjeto");
         TipoObjeto nuevo = new TipoObjeto();
 
         int resultadoEsperado = 200;
         Client cliente = ClientBuilder.newClient();
         WebTarget target = cliente.target(url.toString() + "resources/");
-        Response respuesta = target.path("tipoobjeto/2").request("application/json").delete();
+        Response respuesta = target.path("tipoobjeto/3").request("application/json").delete();
         assertEquals(resultadoEsperado, respuesta.getStatus());
         String registro = respuesta.getHeaderString("ID-eliminado");
         assertNotEquals(null, registro);
         String cuerpoString = respuesta.readEntity(String.class);
         JsonReader lector = Json.createReader(new StringReader(cuerpoString));
         JsonObject objeto = lector.readObject();
-        
         System.out.println("\n\n");
-        System.out.println("\n\n");
-        System.out.println("ID:" + objeto.getInt("idTipoObjeto")+" eliminado con exito");
-        System.out.println("\n\n");
+        System.out.println("ID:" + objeto.getInt("idTipoObjeto")+" eliminado correctamente");
         System.out.println("\n\n");
     }
 

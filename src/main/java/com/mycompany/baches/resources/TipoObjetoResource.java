@@ -82,14 +82,13 @@ public class TipoObjetoResource implements Serializable {
     }
 
     @DELETE
-    @Path("{userId}")
-    public Response eliminar(@PathParam("userId") int id) {
-        TipoObjeto eliminar = new TipoObjeto();
-        eliminar.setIdTipoObjeto(id);
-        toBean.eliminar(eliminar);
-        return Response.ok(eliminar)
-                .header("ID eliminado", id)
-                .build();
+    @Path("{idTipoObjeto}")
+    public Response Eliminar(@PathParam("idTipoObjeto") int id){
+        TipoObjeto registro = toBean.findById(id);
+        toBean.eliminar(registro);
+        return Response.ok(registro)
+            .header("ID-eliminado",id)
+                    .build();
     }
 
     @GET

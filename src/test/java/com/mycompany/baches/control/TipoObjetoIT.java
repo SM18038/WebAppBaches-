@@ -12,12 +12,16 @@ import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
+import org.junit.jupiter.api.Order;
+import org.junit.jupiter.api.TestMethodOrder;
+import org.junit.jupiter.api.MethodOrderer.OrderAnnotation;
 
 /**
  *
  * @author adrian
  */
 @ExtendWith(ArquillianExtension.class)
+@TestMethodOrder(OrderAnnotation.class)
 public class TipoObjetoIT {
 
     @Deployment
@@ -38,6 +42,7 @@ public class TipoObjetoIT {
     TipoObjetoBean cut;
 
     @Test
+    @Order(6)
     public void testContar() throws Exception {
         System.out.println("Contar");
         assertNotNull(cut);
@@ -47,6 +52,7 @@ public class TipoObjetoIT {
     }
 
     @Test
+    @Order(1)
     public void testCrear() throws Exception {
         System.out.println("Crear");
         assertNotNull(cut);
@@ -59,6 +65,7 @@ public class TipoObjetoIT {
     }
 
     @Test
+    @Order(7)
     public void testfindById() {
         System.out.println("findById");
         assertNotNull(cut);
@@ -69,6 +76,7 @@ public class TipoObjetoIT {
     }
 
     @Test
+    @Order(2)
     public void testModificar() throws Exception {
         System.out.println("modificar");
         assertNotNull(cut);
@@ -81,6 +89,7 @@ public class TipoObjetoIT {
     }
     
     @Test
+    @Order(3)
     public void testFindAll() {
         System.out.println("FindAll");
         Assertions.assertNotNull(cut);
@@ -92,6 +101,7 @@ public class TipoObjetoIT {
     }
 
     @Test
+    @Order(4)
     public void testfindRange() {
         System.out.println("findRange");
         assertNotNull(cut);
@@ -104,12 +114,13 @@ public class TipoObjetoIT {
     }
 
     @Test
+    @Order(5)
     public void testEliminar() throws Exception {
-        System.out.println("eliminar");
+         System.out.println("Eliminar");
         assertNotNull(cut);
-        TipoObjeto eliminado = new TipoObjeto();
-        eliminado.setIdTipoObjeto(2);
+        TipoObjeto eliminado = new TipoObjeto(2);
         cut.eliminar(eliminado);
+        System.out.println("Eliminado el Registro "+ eliminado);
     }
     
 }
