@@ -7,7 +7,6 @@ package com.mycompany.baches.resources;
 
 import com.mycompany.baches.control.EstadoBean;
 import com.mycompany.baches.entity.Estado;
-import java.io.Serializable;
 import java.util.Date;
 import java.util.List;
 import java.util.concurrent.CompletableFuture;
@@ -29,7 +28,7 @@ import javax.ws.rs.core.Response;
 @Path("estado")
 @RequestScoped
 
-public class EstadoResource implements Serializable{
+public class EstadoResource{
      @Inject
      EstadoBean toBean;
      
@@ -43,7 +42,7 @@ public class EstadoResource implements Serializable{
                 .build();
     }
      
-     @POST
+    @POST
     public Response crear(Estado nuevo) {
         nuevo.setNombre("EstadoResource");
         nuevo.setFechaCreacion(new Date());

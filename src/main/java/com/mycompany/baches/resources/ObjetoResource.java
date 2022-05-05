@@ -68,8 +68,9 @@ public class ObjetoResource implements Serializable{
     
     @DELETE
     @Path("{idObjeto}")
-    public Response Eliminar(@PathParam("idObjeto") int id){
+    public Response Eliminar(@PathParam("idObjeto") Long id){
         Objeto registro = toBean.findById(id);
+        registro.setIdObjeto(id);
         toBean.eliminar(registro);
         return Response.ok(registro)
             .header("ID-eliminado",id)
