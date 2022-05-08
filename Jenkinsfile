@@ -11,7 +11,7 @@ pipeline{
          }
        stage('SonarQube analysis') {
         steps{
-            withSonarQubeEnv() { 
+            withSonarQubeEnv('Sonarqube 8.9.2') { 
             sh "mvn clean verify sonar:sonar -Dsonar.projectKey=bachesTPIBackend"
                 }
             }
