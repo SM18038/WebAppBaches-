@@ -1,21 +1,11 @@
-pipeline{
-    agent any
-    environment {
-        PATH = "$PATH:/usr/share/maven/bin"
+node {
+  stage('SCM') {
+    checkout scm
+  }
+  stage('SonarQube Analysis') {
+    def mvn = tool '3.8.4';
+    withSonarQubeEnv() {
+      sh "${mvn}/bin/mvn clean verify sonar:sonar -Dsonar.projectKey=bachesTPIBackend"
     }
-    stages{        
-       stage('Build'){
-            steps{
-                //sh 'mvn clean package'
-            }
-         }
-       stage('SonarQube analysis') {
-        steps{
-            withSonarQubeEnv('Sonarqube 8.9.2') { 
-            sh "mvn clean verify sonar:sonar -Dsonar.projectKey=bachesTPIBackend"
-                }
-            }
-        }
-       
-    }
+  }
 }
