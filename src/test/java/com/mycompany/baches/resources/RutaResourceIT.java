@@ -61,7 +61,7 @@ public class RutaResourceIT {
     
     @ArquillianResource
     URL url;
-    /*
+    
     @Test
     @RunAsClient
     @Order(1)
@@ -69,12 +69,14 @@ public class RutaResourceIT {
         System.out.println("\n\n*************************************************************");
         System.out.println("Crear Ruta");
         Ruta nuevo = new Ruta();
-        nuevo.setNombre("RutaResource");
+        nuevo.setNombre("RutaPrueba");
         nuevo.setFechaCreacion(new Date());
+        nuevo.setObservaciones("RutaPrueba");
+
         int resultadoEsperado = 200;
         Client cliente = ClientBuilder.newClient();
         WebTarget target = cliente.target(url.toString() + "resources/");
-        Response respuesta = target.path("ruta").request("accept","application/json").post(Entity.entity(nuevo, MediaType.APPLICATION_JSON));
+        Response respuesta = target.path("ruta").request("application/json").post(Entity.entity(nuevo, MediaType.APPLICATION_JSON));
         assertEquals(resultadoEsperado, respuesta.getStatus());
         String registro = respuesta.getHeaderString("Registro-Creado");
         assertNotEquals(null, registro);
@@ -85,7 +87,7 @@ public class RutaResourceIT {
         System.out.println("Creado " + objeto);
         System.out.println("\n\n");
     }
-*/
+
 
     @Test
     @RunAsClient

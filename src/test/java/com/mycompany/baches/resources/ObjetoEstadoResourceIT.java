@@ -63,7 +63,7 @@ public class ObjetoEstadoResourceIT {
     @ArquillianResource
     URL url;
     
-    /*
+    
     @Test
     @RunAsClient
     @Order(1)
@@ -73,10 +73,12 @@ public class ObjetoEstadoResourceIT {
         ObjetoEstado nuevo = new ObjetoEstado();
         nuevo.setActual(Boolean.TRUE);
         nuevo.setFechaAlcanzado(new Date());
+        nuevo.setObservaciones("nuevoRegistro");
+
         int resultadoEsperado = 200;
         Client cliente = ClientBuilder.newClient();
         WebTarget target = cliente.target(url.toString() + "resources/");
-        Response respuesta = target.path("objetoestado").request("accept","application/json").post(Entity.entity(nuevo, MediaType.APPLICATION_JSON));
+        Response respuesta = target.path("objetoestado").request("application/json").post(Entity.entity(nuevo, MediaType.APPLICATION_JSON));
         assertEquals(resultadoEsperado, respuesta.getStatus());
         String registro = respuesta.getHeaderString("Registro-Creado");
         assertNotEquals(null, registro);
@@ -87,7 +89,7 @@ public class ObjetoEstadoResourceIT {
         System.out.println("Creado " + objeto);
         System.out.println("\n\n");
     }
-*/
+
 
     @Test
     @RunAsClient

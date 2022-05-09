@@ -13,12 +13,14 @@ import java.util.concurrent.CompletableFuture;
 import javax.enterprise.context.RequestScoped;
 import javax.inject.Inject;
 import javax.ws.rs.DELETE;
+import javax.ws.rs.DefaultValue;
 import javax.ws.rs.GET;
 import javax.ws.rs.POST;
 import javax.ws.rs.PUT;
 import javax.ws.rs.Path;
 import javax.ws.rs.PathParam;
 import javax.ws.rs.Produces;
+import javax.ws.rs.QueryParam;
 import javax.ws.rs.core.Response;
 
 /**
@@ -33,36 +35,48 @@ public class ObjetoEstadoResource {
     @Inject
     ObjetoEstadoBean toBean;
     
-     @GET
+    @GET
     @Produces({"application/json; charset=UTF-8"})
-    public Response findAll(){
-        List<ObjetoEstado> registros=toBean.findAll();
-        Long total=toBean.contar();
+    public Response findAll() {
+        List<ObjetoEstado> registros = toBean.findAll();
+        Long total = toBean.contar();
         return Response.ok(registros)
-                .header("Total-registros", total)
+                .header("Total-Registros", total)
                 .build();
     }
-    
-    
+
+    public Response findRange(
+            @QueryParam(value = "first")
+            @DefaultValue(value = "0") int first,
+            @QueryParam(value = "pagesize")
+            @DefaultValue(value = "50") int pageSize) {
+        List<ObjetoEstado> registros = toBean.findRange(first, pageSize);
+        Long total = toBean.contar();
+        return Response.ok(registros)
+                .header("Total-Registros", total)
+                .build();
+    }
+
+    @GET
+    @Path("contar")
+    public CompletableFuture<Long> contar() {
+        return CompletableFuture.supplyAsync(toBean::contar);
+    }
+
     @POST
     public Response crear(ObjetoEstado nuevo) {
-        nuevo.setActual(Boolean.TRUE);
-        nuevo.setFechaAlcanzado(new Date());
         toBean.crear(nuevo);
         return Response.ok(nuevo)
-                .header("Registro Creado", nuevo)
+                .header("Registro-Creado", nuevo)
                 .build();
     }
 
     @PUT
-    public Response modificar(ObjetoEstado actual) {
-        actual.setActual(Boolean.FALSE);
-        actual.setFechaAlcanzado(new Date());
-        toBean.modificar(actual);
-        return Response.ok(actual)
-                .header("Modificado", actual)
+    public Response modificar(ObjetoEstado modificar) {
+        toBean.modificar(modificar);
+        return Response.ok(modificar)
+                .header("Modificado", modificar)
                 .build();
-
     }
     
     @DELETE
@@ -76,10 +90,5 @@ public class ObjetoEstadoResource {
                     .build();
     }
     
-    @GET
-    @Path("contar")
-    public CompletableFuture<Long> contar(){
-        return CompletableFuture.supplyAsync(toBean::contar);
-    }
     
 }

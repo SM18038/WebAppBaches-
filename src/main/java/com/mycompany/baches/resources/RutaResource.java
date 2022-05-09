@@ -13,12 +13,14 @@ import java.util.concurrent.CompletableFuture;
 import javax.enterprise.context.RequestScoped;
 import javax.inject.Inject;
 import javax.ws.rs.DELETE;
+import javax.ws.rs.DefaultValue;
 import javax.ws.rs.GET;
 import javax.ws.rs.POST;
 import javax.ws.rs.PUT;
 import javax.ws.rs.Path;
 import javax.ws.rs.PathParam;
 import javax.ws.rs.Produces;
+import javax.ws.rs.QueryParam;
 import javax.ws.rs.core.Response;
 
 /**
@@ -32,35 +34,47 @@ public class RutaResource {
     @Inject
     RutaBean toBean;
     
+    public Response findAll() {
+        List<Ruta> registros = toBean.findAll();
+        Long total = toBean.contar();
+        return Response.ok(registros)
+                .header("Total-Registros", total)
+                .build();
+    }
     @GET
     @Produces({"application/json; charset=UTF-8"})
-    public Response findAll(){
-        List<Ruta> registros=toBean.findAll();
-        Long total=toBean.contar();
+    public Response findRange(
+            @QueryParam(value = "first")
+            @DefaultValue(value = "0") int first,
+            @QueryParam(value = "pagesize")
+            @DefaultValue(value = "50") int pageSize){
+        List<Ruta> registros = toBean.findRange(first, pageSize);
+        Long total = toBean.contar();
         return Response.ok(registros)
-                .header("Total-registros", total)
+            .header("Total-Registros", total)
                 .build();
     }
     
+    @GET
+    @Path("contar")
+    public CompletableFuture<Long> contar(){
+        return CompletableFuture.supplyAsync(toBean::contar); 
+    } 
+    
     @POST
-    public Response crear(Ruta nuevo) {
-        nuevo.setNombre("RutaResource");
-        nuevo.setFechaCreacion(new Date());
+    public Response crear(Ruta nuevo){
         toBean.crear(nuevo);
         return Response.ok(nuevo)
-                .header("Registro Creado", nuevo)
+                .header("Registro-Creado", nuevo)
                 .build();
     }
-
+    
     @PUT
-    public Response modificar(Ruta actual) {
-        actual.setNombre("RutaResource Modificado");
-        actual.setFechaCreacion(new Date());
-        toBean.modificar(actual);
-        return Response.ok(actual)
-                .header("Modificado", actual)
+    public Response modificar(Ruta act){
+        toBean.modificar(act);
+        return Response.ok(act)
+                .header("Modificado", act)
                 .build();
-
     }
     
     @DELETE
@@ -74,9 +88,4 @@ public class RutaResource {
                     .build();
     }
     
-    @GET
-    @Path("contar")
-    public CompletableFuture<Long> contar(){
-        return CompletableFuture.supplyAsync(toBean::contar);
-    }
 }

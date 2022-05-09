@@ -63,33 +63,7 @@ public class EstadoResourceIT {
     @ArquillianResource
     URL url;
     
-    @Test
-    @RunAsClient
-    @Order(4)
-    public void testFindAll(){
-        System.out.println("\n\n*************************************************************");
-        System.out.println("findAll Estado");
-        int resultadoEsperado=200;
-        Client cliente=ClientBuilder.newClient();
-        WebTarget target= cliente.target(url.toString()+"resources/");
-        Response respuesta = target.path("estado").request("accept","application/json").get(); 
-        assertEquals(resultadoEsperado, respuesta.getStatus());
-        String totalTexto = respuesta.getHeaderString("Total-Registros");
-        assertNotEquals(Integer.valueOf(0), Integer.valueOf(totalTexto));
-        System.out.println("Total: "+totalTexto);
-        String cuerpoString = respuesta.readEntity(String.class);
-        JsonReader lector = Json.createReader(new StringReader(cuerpoString));
-        JsonArray listaJson = lector.readArray();
-        int totalRegistros = listaJson.size();
-        assertTrue(totalRegistros>0);
-        System.out.println("\n");
-        for(int i=0; i< listaJson.size(); i++){
-            JsonObject objeto = listaJson.getJsonObject(i);
-            System.out.println("ID: " + objeto.getInt("idEstado"));
-        }
-        System.out.println("\n");
-    }
-    /*
+    
     @Test
     @RunAsClient
     @Order(1)
@@ -97,8 +71,10 @@ public class EstadoResourceIT {
         System.out.println("\n\n*************************************************************");
         System.out.println("Crear Estado");
         Estado nuevo = new Estado();
-        nuevo.setNombre("EstadoResourceIT");
+        nuevo.setNombre("testPrueba");
         nuevo.setFechaCreacion(new Date());
+        nuevo.setObservaciones("pruebaDeIT");
+
         int resultadoEsperado = 200;
         Client cliente = ClientBuilder.newClient();
         WebTarget target = cliente.target(url.toString() + "resources/");
@@ -112,8 +88,9 @@ public class EstadoResourceIT {
         System.out.println("\n\n");
         System.out.println("Creado " + objeto);
         System.out.println("\n\n");
+
     }
-    */
+    
 
     @Test
     @RunAsClient
@@ -160,6 +137,33 @@ public class EstadoResourceIT {
         JsonObject objeto = lector.readObject();
         System.out.println("\n");
         System.out.println("ID:" + objeto.getInt("idEstado") + " eliminado correctamente");
+        System.out.println("\n");
+    }
+    
+    @Test
+    @RunAsClient
+    @Order(4)
+    public void testFindAll(){
+        System.out.println("\n\n*************************************************************");
+        System.out.println("findAll Estado");
+        int resultadoEsperado=200;
+        Client cliente=ClientBuilder.newClient();
+        WebTarget target= cliente.target(url.toString()+"resources/");
+        Response respuesta = target.path("estado").request("accept","application/json").get(); 
+        assertEquals(resultadoEsperado, respuesta.getStatus());
+        String totalTexto = respuesta.getHeaderString("Total-Registros");
+        assertNotEquals(Integer.valueOf(0), Integer.valueOf(totalTexto));
+        System.out.println("Total: "+totalTexto);
+        String cuerpoString = respuesta.readEntity(String.class);
+        JsonReader lector = Json.createReader(new StringReader(cuerpoString));
+        JsonArray listaJson = lector.readArray();
+        int totalRegistros = listaJson.size();
+        assertTrue(totalRegistros>0);
+        System.out.println("\n");
+        for(int i=0; i< listaJson.size(); i++){
+            JsonObject objeto = listaJson.getJsonObject(i);
+            System.out.println("ID: " + objeto.getInt("idEstado"));
+        }
         System.out.println("\n");
     }
     
