@@ -9,7 +9,7 @@ node {
     }
    stage('Unit Test') {
         steps {
-            echo 'Testing..'
+            echo 'Testing...'
             sh "mvn compile test"
         }
     }
