@@ -3,15 +3,12 @@ node {
     checkout scm
   }
   stage('Build') {
-        steps {
-            echo 'Building..'
-        }
-    }
+       echo 'Building..'
+        
+  }
    stage('Unit Test') {
-        steps {
-            echo 'Testing...'
-            sh "mvn compile test"
-        }
+        echo 'Testing...'
+            sh "mvn compile test"           
     }
 
   stage('SonarQube Analysis') {
@@ -22,8 +19,6 @@ node {
   }
 
   stage('Deploy') {
-        steps {
-            echo 'Deploying..'
-        }
-   } 
+        echo 'Deploying..'
+  } 
 }
