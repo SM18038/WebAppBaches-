@@ -37,7 +37,7 @@ public class EstadoResource{
      
     @GET
     @Produces({"application/json; charset=UTF-8"})
-    @Path("/all")
+    //@Path("/all")
     public Response findAll() {
         List<Estado> registros = toBean.findAll();
         Long total = toBean.contar();
