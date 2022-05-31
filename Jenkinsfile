@@ -7,26 +7,6 @@ pipeline {
     }
     
     stages {
-
-   //Build project
-    stage('Build') {
-            steps {
-                echo 'Building..'
-            }
-        }
-
-    stage('Unit Test') {
-            steps {
-                echo 'Testing..'
-                sh "mvn clean compile test"
-            }
-        }
-
-    stage('SonarQube Analysis') {
-        steps {
-             echo 'SonarQube Analysis'
-            }
-        }
     
     // Building Docker images
     stage('Building image') {
