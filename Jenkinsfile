@@ -1,12 +1,35 @@
 pipeline {
     agent any 
     environment {
-         registry = "adriansandoval/baches"
+         registry = "adriansandoval/baches:1.0"
          registryCredential = 'dockerhub_id'
          dockerImage = ''
     }
     
     stages {
+
+   //Build project
+    stage('Build') {
+            steps {
+                echo 'Building..'
+            }
+        }
+
+    stage('Unit Test') {
+            steps {
+                echo 'Testing..'
+                sh "mvn clean compile test"
+            }
+        }
+
+    stage('SonarQube Analysis') {
+        steps {
+            def mvn = tool '3.8.5';
+            withSonarQubeEnv() {
+            sh "${mvn}/bin/mvn clean verify sonar:sonar -Dsonar.projectKey=bachesTPIBackend"
+                }
+            }
+        }
     
     // Building Docker images
     stage('Building image') {
@@ -26,13 +49,7 @@ pipeline {
         }
       }
     }
-    // Stopping Docker containers for cleaner Docker run
-     stage('docker stop container') {
-         steps {
-            sh 'docker ps -f name=mypythonappContainer -q | xargs --no-run-if-empty docker container stop'
-            sh 'docker container ls -a -fname=mypythonappContainer -q | xargs -r docker container rm'
-         }
-       }
+
     // Running Docker container
     stage('Docker Run') {
      steps{
