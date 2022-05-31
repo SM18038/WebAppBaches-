@@ -2,7 +2,7 @@ pipeline {
     agent any 
     environment {
          registry = "adriansandoval/baches"
-        //registryCredential = 'dockerhub_id'
+         registryCredential = 'dockerhub_id'
          dockerImage = ''
     }
     
@@ -16,6 +16,14 @@ pipeline {
         }
       }
     }
+    stage('Uploading Image') {
+        echo 'Upload Image..'
+            script {
+                docker.withRegistry( '', registryCredential ) {
+                dockerImage.push()
+                }
+            }          
    
+    }
   }
 }
