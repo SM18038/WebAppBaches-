@@ -1,5 +1,9 @@
 pipeline {
     agent any 
+    tools {
+        maven "3.8.5"
+    }
+
     environment {
          registry = "adriansandoval/baches:1.0"
          registryCredential = 'dockerhub_id'
@@ -24,10 +28,8 @@ pipeline {
 
     stage('SonarQube Analysis') {
         steps {
-            def mvn = tool '3.8.5';
-            withSonarQubeEnv() {
             sh "${mvn}/bin/mvn clean verify sonar:sonar -Dsonar.projectKey=bachesTPIBackend"
-                }
+                
             }
         }
     
