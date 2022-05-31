@@ -8,3 +8,5 @@ RUN echo "create-jdbc-connection-pool --datasourceclassname org.postgresql.ds.PG
 RUN echo "deploy $PAYARA_DIR/target/Baches-1.0-SNAPSHOT.war" >> $POSTBOOT_COMMANDS
 #COPY Baches.war $PAYARA_DIR
 COPY target/Baches-1.0-SNAPSHOT.war $PAYARA_DIR
+
+EXPOSE 5000

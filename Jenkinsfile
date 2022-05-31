@@ -30,7 +30,7 @@ pipeline {
     stage('Docker Run') {
      steps{
          script {
-            dockerImage.run("docker run --name baches --rm -p 8080:8080 --add-host db:192.168.1.16 baches:1.0")
+            dockerImage.run("-p 8080:5000 --rm --name baches:1.0")
          }
       }
     }
