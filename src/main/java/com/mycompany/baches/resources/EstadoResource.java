@@ -12,6 +12,7 @@ import java.util.List;
 import java.util.concurrent.CompletableFuture;
 import javax.enterprise.context.RequestScoped;
 import javax.inject.Inject;
+import javax.ws.rs.Consumes;
 import javax.ws.rs.DELETE;
 import javax.ws.rs.DefaultValue;
 import javax.ws.rs.GET;
@@ -36,6 +37,7 @@ public class EstadoResource{
      
     @GET
     @Produces({"application/json; charset=UTF-8"})
+    @Path("/all")
     public Response findAll() {
         List<Estado> registros = toBean.findAll();
         Long total = toBean.contar();
@@ -63,6 +65,8 @@ public class EstadoResource{
     }
 
     @POST
+    @Consumes({"application/json; charset=UTF-8"})
+    @Produces({"application/json; charset=UTF-8"})
     public Response crear(Estado nuevo) {
         toBean.crear(nuevo);
         return Response.ok(nuevo)
