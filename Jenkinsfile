@@ -26,5 +26,13 @@ pipeline {
         }
       }
     }
+    // Running Docker container, make sure port 8096 is opened in 
+    stage('Docker Run') {
+     steps{
+         script {
+            dockerImage.run("docker run --name baches --rm -p 8080:8080 --add-host db:192.168.1.16 baches:1.0")
+         }
+      }
+    }
   }
 }
