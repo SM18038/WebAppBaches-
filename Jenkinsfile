@@ -27,26 +27,20 @@ node {
 
     // Building Docker images
     stage('Building image') {
-        script {
           dockerImage = docker.build registry
-        }
       }
     
     // Uploading Docker images into Docker Hub
     stage('Upload Image') {  
-         script {
             docker.withRegistry( '', registryCredential ) {
             dockerImage.push()
-            }
         }
       
     }
 
     // Running Docker container
     stage('Docker Run') {
-         script {
              dockerImage.run("docker run --name baches --rm -p 8090:8080 --add-host db:192.168.1.16 baches:1.0")
-         }
       
     }
 }
