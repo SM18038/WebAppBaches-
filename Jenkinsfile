@@ -11,7 +11,7 @@ pipeline {
            steps {
                 sh 'echo '
                 sh 'docker build -t baches:1.0 --build-arg USER_DB=${USER_DB} --build-arg PASSWORD_DB=${PASSWORD_DB} --build-arg NAME_DB=${NAME_DB} ./'
-                sh 'docker tag adriansandoval/baches adriansandoval/baches:latest'
+                sh 'docker tag baches adriansandoval/baches:latest'
                
           }
         }
