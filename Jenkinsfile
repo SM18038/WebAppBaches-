@@ -9,8 +9,9 @@ pipeline {
 stages {
         stage('Test') {
             steps {
-                echo 'Testing..'
-                sh 'mvn clean compile test'
+                withMaven(maven: 'maven') {
+                sh 'mvn -f pom.xml clean test'
+                }
             }
         }
     stage('sonnar'){
@@ -59,7 +60,7 @@ stages {
     stage('Docker Run') {
      steps{
          script {
-            dockerImage.run("-p 9090:8080 --add-host db:192.168.1.20 --rm --name bachesImage")
+            dockerImage.run("-p 9090:8080 --add-host db:192.168.1.20--rm --name bachesImage")
          }
       }
     }
