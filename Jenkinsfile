@@ -41,7 +41,7 @@ stages {
     stage('Docker Run') {
      steps{
          script {
-             dockerImage.run("-p 8080:8080 --add-host db:192.168.1.20 --rm --name baches baches:1.0")
+             dockerImage.run("-p 8090:8080 --add-host db:192.168.1.20 --rm --name baches baches:1.0")
          }
       }
     }
