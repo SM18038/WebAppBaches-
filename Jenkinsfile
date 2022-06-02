@@ -18,8 +18,8 @@ pipeline {
          stage('Run Docker container on remote hosts') {
              
             steps {
-                sh "docker run -d --add-host db:192.168.1.20 -p 8090:8080 adriansandoval/baches:1.0"
- 
+                sh "docker -H ssh://adrian@192.168.1.20 run -d --add-host db:192.168.1.20 -p 8090:8080 adriansandoval/baches:1.0"
+
             }
         }
 
