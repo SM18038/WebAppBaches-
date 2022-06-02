@@ -1,5 +1,8 @@
 pipeline {
     agent any 
+    tools {
+        maven "3.8.5"
+    }
     environment {
          registry = "adriansandoval/baches"
          registryCredential = 'dockerhub_id'
@@ -7,11 +10,10 @@ pipeline {
     }
     
 stages {
-        stage('Test') {
+         stage('Unit Test') {
             steps {
-                withMaven(maven: 'maven') {
-                sh 'mvn -f pom.xml clean test'
-                }
+                echo 'Testing..'
+                sh "mvn clean compile test"
             }
         }
     stage('sonnar'){
