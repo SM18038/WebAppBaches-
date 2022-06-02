@@ -18,18 +18,6 @@ stages {
                 }
             }
         }
-    stage('sonnar'){
-            steps('gates'){
-                withMaven {
-            sh'mvn --version'
-            sh 'mvn clean verify sonar:sonar \
-                -Dsonar.projectKey=bachesTPIBackend \
-                -Dsonar.host.url=http://localhost:9000 \
-                -Dsonar.login=c3f3c55acf5a7e1630ab3a173bdd0808a7776816'
-                }             
-                
-            }
-        }
     
     // Building Docker images
     stage('Building image') {
