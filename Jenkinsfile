@@ -1,20 +1,21 @@
 pipeline {
     agent any 
     environment {
-         //registry = "adriansandoval/baches"
+         registry = "adriansandoval/baches"
          registryCredential = 'dockerhub_id'
-         //dockerImage = ''
+         dockerImage = ''
     }
     
     stages {
-    stage('Docker Build ') {
-           steps {
-                sh 'echo '
-                sh 'docker build -t baches:1.0 --build-arg USER_DB=${USER_DB} --build-arg PASSWORD_DB=${PASSWORD_DB} --build-arg NAME_DB=${NAME_DB} ./'
-                //sh 'docker tag baches adriansandoval/baches:1.0'
-               
-          }
+    
+    // Building Docker images
+    stage('Building image') {
+      steps{
+        script {
+          dockerImage = docker.build registry
         }
+      }
+    }
     // Uploading Docker images into Docker Hub
     stage('Upload Image') {
      steps{    
@@ -25,14 +26,15 @@ pipeline {
         }
       }
     }
-         stage('Run Docker container on remote hosts') {
-             
-            steps {
-                sh "docker run -d --add-host db:192.168.1.20 -p 8090:8080 baches:1.0"
 
-            }
-        }
-
+    // Running Docker container
+    stage('Docker Run') {
+     steps{
+         script {
+             dockerImage.run("docker run -p 8090:8080 --add-host db:192.168.1.20 --rm --name baches baches:1.0")
+         }
+      }
+    }
   }
 }
 
