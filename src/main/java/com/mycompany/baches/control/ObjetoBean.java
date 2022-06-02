@@ -56,4 +56,13 @@ import javax.persistence.Query;
         return 0;
     }
     
+    
+    public List<Objeto> findNombre(String nombre){
+        
+        Query q=em.createNamedQuery("Objeto.findByNombre");
+        q.setParameter("nombre", nombre);
+        
+        return q.getResultList();
+    }
+    
 }
