@@ -41,6 +41,7 @@ public class EstadoResource{
     public Response findAll() {
         List<Estado> registros = toBean.findAll();
         Long total = toBean.contar();
+        registros.stream().forEach(u -> u.setNombre(u.getNombre().toUpperCase()));
         return Response.ok(registros)
                 .header("Total-Registros", total)
                 .build();
@@ -94,5 +95,6 @@ public class EstadoResource{
             .header("ID-eliminado",id)
                     .build();
     }
+    
 
 }
