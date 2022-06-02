@@ -10,10 +10,11 @@ pipeline {
     }
     
 stages {
-         stage('Unit Test') {
+        stage('Test') {
             steps {
-                echo 'Testing..'
-                sh "mvn clean compile test"
+                withMaven(maven: 'maven') {
+                sh 'mvn -f pom.xml clean test'
+                }
             }
         }
     stage('sonnar'){
