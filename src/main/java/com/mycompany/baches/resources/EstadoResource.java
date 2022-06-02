@@ -37,7 +37,7 @@ public class EstadoResource{
      
     @GET
     @Produces({"application/json; charset=UTF-8"})
-    //@Path("/all")
+    @Path("all")
     public Response findAll() {
         List<Estado> registros = toBean.findAll();
         Long total = toBean.contar();
@@ -45,7 +45,9 @@ public class EstadoResource{
                 .header("Total-Registros", total)
                 .build();
     }
-
+    
+    @GET
+    @Path("findRange")
     public Response findRange(
             @QueryParam(value = "first")
             @DefaultValue(value = "0") int first,
@@ -65,8 +67,7 @@ public class EstadoResource{
     }
 
     @POST
-    @Consumes({"application/json; charset=UTF-8"})
-    @Produces({"application/json; charset=UTF-8"})
+    //@Path("crearEstado")
     public Response crear(Estado nuevo) {
         toBean.crear(nuevo);
         return Response.ok(nuevo)
@@ -75,6 +76,7 @@ public class EstadoResource{
     }
 
     @PUT
+    //@Path("modificarEstado")
     public Response modificar(Estado act) {
         toBean.modificar(act);
         return Response.ok(act)
@@ -83,7 +85,7 @@ public class EstadoResource{
     }
 
     @DELETE
-    @Path("{idEstado}")
+    @Path("eliminar/{idEstado}")
     public Response Eliminar(@PathParam("idEstado") int id){
         Estado registro = toBean.findById(id);
         registro.setIdEstado(id);

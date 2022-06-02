@@ -37,7 +37,7 @@ import javax.ws.rs.core.Response;
      
     @GET
     @Produces({&quot;application/json; charset=UTF-8&quot;})
-    //@Path(&quot;/all&quot;)
+    @Path(&quot;all&quot;)
     public Response findAll() {
 <span class="nc" id="L42">        List&lt;Estado&gt; registros = toBean.findAll();</span>
 <span class="nc" id="L43">        Long total = toBean.contar();</span>
@@ -65,16 +65,16 @@ import javax.ws.rs.core.Response;
     }
 
     @POST
-    @Consumes({&quot;application/json; charset=UTF-8&quot;})
-    @Produces({&quot;application/json; charset=UTF-8&quot;})
+    @Path(&quot;crearEstado&quot;)
     public Response crear(Estado nuevo) {
-<span class="nc" id="L71">        toBean.crear(nuevo);</span>
-<span class="nc" id="L72">        return Response.ok(nuevo)</span>
-<span class="nc" id="L73">                .header(&quot;Registro-Creado&quot;, nuevo)</span>
-<span class="nc" id="L74">                .build();</span>
+<span class="nc" id="L70">        toBean.crear(nuevo);</span>
+<span class="nc" id="L71">        return Response.ok(nuevo)</span>
+<span class="nc" id="L72">                .header(&quot;Registro-Creado&quot;, nuevo)</span>
+<span class="nc" id="L73">                .build();</span>
     }
 
     @PUT
+    @Path(&quot;modificarEstado&quot;)
     public Response modificar(Estado act) {
 <span class="nc" id="L79">        toBean.modificar(act);</span>
 <span class="nc" id="L80">        return Response.ok(act)</span>
@@ -83,7 +83,7 @@ import javax.ws.rs.core.Response;
     }
 
     @DELETE
-    @Path(&quot;{idEstado}&quot;)
+    @Path(&quot;eliminar/{idEstado}&quot;)
     public Response Eliminar(@PathParam(&quot;idEstado&quot;) int id){
 <span class="nc" id="L88">        Estado registro = toBean.findById(id);</span>
 <span class="nc" id="L89">        registro.setIdEstado(id);</span>

@@ -34,7 +34,9 @@ public class TipoObjetoResource implements Serializable {
 
     @Inject
     TipoObjetoBean toBean;
-
+    
+    @GET
+    @Path("all")
     public Response findAll() {
         List<TipoObjeto> registros = toBean.findAll();
         Long total = toBean.contar();
@@ -47,6 +49,7 @@ public class TipoObjetoResource implements Serializable {
 
     @GET
     @Produces({"application/json; charset=UTF-8"})
+    @Path("findRange/{first}/{pagesize}")
     public Response findRange(
             @QueryParam(value = "first")
             @DefaultValue(value = "0") int first,
@@ -82,7 +85,7 @@ public class TipoObjetoResource implements Serializable {
     }
 
     @DELETE
-    @Path("{idTipoObjeto}")
+    @Path("eliminar/{idTipoObjeto}")
     public Response Eliminar(@PathParam("idTipoObjeto") int id){
         TipoObjeto registro = toBean.findById(id);
         toBean.eliminar(registro);

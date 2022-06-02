@@ -37,6 +37,7 @@ public class ObjetoEstadoResource {
     
     @GET
     @Produces({"application/json; charset=UTF-8"})
+    @Path("all")
     public Response findAll() {
         List<ObjetoEstado> registros = toBean.findAll();
         Long total = toBean.contar();
@@ -44,7 +45,8 @@ public class ObjetoEstadoResource {
                 .header("Total-Registros", total)
                 .build();
     }
-
+    @GET
+    @Path("findRange/{first}/{pagesize}")
     public Response findRange(
             @QueryParam(value = "first")
             @DefaultValue(value = "0") int first,
@@ -80,7 +82,7 @@ public class ObjetoEstadoResource {
     }
     
     @DELETE
-    @Path("{idObjetoEstado}")
+    @Path("eliminar/{idObjetoEstado}")
     public Response Eliminar(@PathParam("idObjetoEstado") Long id){
         ObjetoEstado registro = toBean.findById(id);
         registro.setIdObjetoEstado(id);

@@ -34,6 +34,8 @@ public class RutaResource {
     @Inject
     RutaBean toBean;
     
+    @GET
+    @Path("all")
     public Response findAll() {
         List<Ruta> registros = toBean.findAll();
         Long total = toBean.contar();
@@ -43,6 +45,7 @@ public class RutaResource {
     }
     @GET
     @Produces({"application/json; charset=UTF-8"})
+    @Path("findRange/{first}/{pagesize}")
     public Response findRange(
             @QueryParam(value = "first")
             @DefaultValue(value = "0") int first,
@@ -70,6 +73,7 @@ public class RutaResource {
     }
     
     @PUT
+    //@Path("modificarRuta")
     public Response modificar(Ruta act){
         toBean.modificar(act);
         return Response.ok(act)
@@ -78,7 +82,7 @@ public class RutaResource {
     }
     
     @DELETE
-    @Path("{idRuta}")
+    @Path("eliminar/{idRuta}")
     public Response Eliminar(@PathParam("idRuta") Long id){
         Ruta registro = toBean.findById(id);
         registro.setIdRuta(id);

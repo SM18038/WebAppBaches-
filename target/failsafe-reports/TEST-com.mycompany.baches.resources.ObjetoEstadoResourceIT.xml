@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-failsafe-plugin/xsd/failsafe-test-report-3.0.xsd" version="3.0" name="com.mycompany.baches.resources.ObjetoEstadoResourceIT" time="2.489" tests="5" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-failsafe-plugin/xsd/failsafe-test-report-3.0.xsd" version="3.0" name="com.mycompany.baches.resources.ObjetoEstadoResourceIT" time="2.892" tests="5" errors="0" skipped="0" failures="0">
   <properties>
     <property name="javax.xml.accessExternalSchema" value="all"/>
     <property name="awt.toolkit" value="sun.awt.X11.XToolkit"/>
@@ -10,7 +10,7 @@
     <property name="sun.cpu.isalist" value=""/>
     <property name="javax.net.ssl.trustStorePassword" value="changeit"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
-    <property name="com.sun.aas.installRoot" value="/tmp/gfembed2763522546777173925tmp"/>
+    <property name="com.sun.aas.installRoot" value="/tmp/gfembed12724135745135464521tmp"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="sun.font.fontmanager" value="sun.awt.X11FontManager"/>
     <property name="catalina.useNaming" value="false"/>
@@ -19,9 +19,9 @@
     <property name="org.omg.CORBA.ORBSingletonClass" value="com.sun.corba.ee.impl.orb.ORBSingleton"/>
     <property name="env.XDG_GREETER_DATA_DIR" value="/var/lib/lightdm-data/adrian"/>
     <property name="sun.boot.library.path" value="/usr/lib/jvm/java-11-openjdk-amd64/lib"/>
-    <property name="sun.java.command" value="/home/adrian/NetBeansProjects/Baches/target/surefire/surefirebooter6600933101204024763.jar /home/adrian/NetBeansProjects/Baches/target/surefire 2022-05-30T22-48-13_416-jvmRun1 surefire3164807561300436026tmp surefire_012517232301296932978tmp"/>
+    <property name="sun.java.command" value="/home/adrian/NetBeansProjects/Baches/target/surefire/surefirebooter1522325200825814828.jar /home/adrian/NetBeansProjects/Baches/target/surefire 2022-06-01T23-15-40_204-jvmRun1 surefire12285962164265030379tmp surefire_02639658236500625054tmp"/>
     <property name="jdk.debug" value="release"/>
-    <property name="env.SSH_AGENT_PID" value="1611"/>
+    <property name="env.SSH_AGENT_PID" value="1945"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
     <property name="env.GIO_LAUNCHED_DESKTOP_FILE" value="/home/adrian/Escritorio/Apache NetBeans-12.4.desktop"/>
     <property name="gosh.args" value="--nointeractive"/>
@@ -45,34 +45,34 @@
     <property name="javax.rmi.CORBA.UtilClass" value="com.sun.corba.ee.impl.javax.rmi.CORBA.Util"/>
     <property name="jdbc.drivers" value="org.h2.Driver"/>
     <property name="env.GDM_LANG" value="es_SV"/>
-    <property name="javax.net.ssl.trustStore" value="/tmp/gfembed2763522546777173925tmp/config/cacerts.jks"/>
+    <property name="javax.net.ssl.trustStore" value="/tmp/gfembed12724135745135464521tmp/config/cacerts.jks"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="env.QT_QPA_PLATFORMTHEME" value="qt5ct"/>
     <property name="java.runtime.version" value="11.0.13+8-Ubuntu-0ubuntu1.20.04"/>
     <property name="env.XDG_SESSION_PATH" value="/org/freedesktop/DisplayManager/Session0"/>
     <property name="user.name" value="adrian"/>
     <property name="env.PATH" value="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin"/>
-    <property name="env.NB_EXEC_MAVEN_PROCESS_UUID" value="4445117c-4860-4e61-8943-d4e595108120"/>
+    <property name="env.NB_EXEC_MAVEN_PROCESS_UUID" value="533a72ef-0aa3-489c-be53-c52bd9fd38c0"/>
     <property name="felix.fileinstall.poll" value="5000"/>
-    <property name="java.security.policy" value="/tmp/gfembed2763522546777173925tmp/config/server.policy"/>
+    <property name="java.security.policy" value="/tmp/gfembed12724135745135464521tmp/config/server.policy"/>
     <property name="env.LOGNAME" value="adrian"/>
     <property name="env.XDG_SEAT" value="seat0"/>
     <property name="com.sun.enterprise.config.config_environment_factory_class" value="com.sun.enterprise.config.serverbeans.AppserverConfigEnvironmentFactory"/>
     <property name="felix.fileinstall.log.level" value="2"/>
     <property name="file.encoding" value="UTF-8"/>
-    <property name="com.sun.aas.imqLib" value="/tmp/gfembed2763522546777173925tmp/lib/install/applications/jmsra"/>
+    <property name="com.sun.aas.imqLib" value="/tmp/gfembed12724135745135464521tmp/lib/install/applications/jmsra"/>
     <property name="env.XDG_VTNR" value="7"/>
     <property name="env._" value="/usr/lib/jvm/java-11-openjdk-amd64/bin/java"/>
     <property name="env.XDG_SESSION_DESKTOP" value="cinnamon"/>
     <property name="env.SHLVL" value="0"/>
-    <property name="com.sun.enterprise.jaccprovider.property.repository" value="/tmp/gfembed2763522546777173925tmp/generated/policy"/>
+    <property name="com.sun.enterprise.jaccprovider.property.repository" value="/tmp/gfembed12724135745135464521tmp/generated/policy"/>
     <property name="localRepository" value="/home/adrian/.m2/repository"/>
     <property name="java.io.tmpdir" value="/tmp"/>
     <property name="java.version" value="11.0.13"/>
     <property name="env.SSH_AUTH_SOCK" value="/run/user/1000/keyring/ssh"/>
     <property name="env.XDG_RUNTIME_DIR" value="/run/user/1000"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-    <property name="com.sun.aas.instanceRoot" value="/tmp/gfembed2763522546777173925tmp"/>
+    <property name="com.sun.aas.instanceRoot" value="/tmp/gfembed12724135745135464521tmp"/>
     <property name="java.awt.printerjob" value="sun.print.PSPrinterJob"/>
     <property name="sun.os.patch.level" value="unknown"/>
     <property name="env.LIBVIRT_DEFAULT_URI" value="qemu:///system"/>
@@ -87,12 +87,12 @@
     <property name="env.OLDPWD" value="/home/adrian/NetBeansProjects/Baches"/>
     <property name="sun.desktop" value="gnome"/>
     <property name="env.PWD" value="/home/adrian/NetBeansProjects/Baches"/>
-    <property name="env.SESSION_MANAGER" value="local/adrian-HP:@/tmp/.ICE-unix/1495,unix/adrian-HP:/tmp/.ICE-unix/1495"/>
+    <property name="env.SESSION_MANAGER" value="local/adrian-HP:@/tmp/.ICE-unix/1816,unix/adrian-HP:/tmp/.ICE-unix/1816"/>
     <property name="env.LANG" value="es_SV.UTF-8"/>
-    <property name="felix.fileinstall.dir" value="/tmp/gfembed2763522546777173925tmp/modules/autostart/"/>
+    <property name="felix.fileinstall.dir" value="/tmp/gfembed12724135745135464521tmp/modules/autostart/"/>
     <property name="java.class.path" value="/home/adrian/NetBeansProjects/Baches/target/test-classes:/home/adrian/NetBeansProjects/Baches/target/classes:/home/adrian/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.6.0/junit-jupiter-api-5.6.0.jar:/home/adrian/.m2/repository/org/apiguardian/apiguardian-api/1.1.0/apiguardian-api-1.1.0.jar:/home/adrian/.m2/repository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar:/home/adrian/.m2/repository/org/junit/platform/junit-platform-commons/1.6.0/junit-platform-commons-1.6.0.jar:/home/adrian/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.6.0/junit-jupiter-params-5.6.0.jar:/home/adrian/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.6.0/junit-jupiter-engine-5.6.0.jar:/home/adrian/.m2/repository/org/junit/platform/junit-platform-engine/1.6.0/junit-platform-engine-1.6.0.jar:/home/adrian/.m2/repository/javax/javaee-api/8.0/javaee-api-8.0.jar:/home/adrian/.m2/repository/com/sun/mail/javax.mail/1.6.0/javax.mail-1.6.0.jar:/home/adrian/.m2/repository/javax/activation/activation/1.1/activation-1.1.jar:/home/adrian/.m2/repository/org/mockito/mockito-core/3.1.0/mockito-core-3.1.0.jar:/home/adrian/.m2/repository/net/bytebuddy/byte-buddy/1.9.10/byte-buddy-1.9.10.jar:/home/adrian/.m2/repository/net/bytebuddy/byte-buddy-agent/1.9.10/byte-buddy-agent-1.9.10.jar:/home/adrian/.m2/repository/org/objenesis/objenesis/2.6/objenesis-2.6.jar:/home/adrian/.m2/repository/org/jboss/arquillian/junit5/arquillian-junit5-container/1.7.0.Alpha10/arquillian-junit5-container-1.7.0.Alpha10.jar:/home/adrian/.m2/repository/org/jboss/arquillian/test/arquillian-test-api/1.7.0.Alpha10/arquillian-test-api-1.7.0.Alpha10.jar:/home/adrian/.m2/repository/org/jboss/arquillian/core/arquillian-core-api/1.7.0.Alpha10/arquillian-core-api-1.7.0.Alpha10.jar:/home/adrian/.m2/repository/org/jboss/arquillian/test/arquillian-test-spi/1.7.0.Alpha10/arquillian-test-spi-1.7.0.Alpha10.jar:/home/adrian/.m2/repository/org/jboss/arquillian/core/arquillian-core-spi/1.7.0.Alpha10/arquillian-core-spi-1.7.0.Alpha10.jar:/home/adrian/.m2/repository/org/jboss/arquillian/container/arquillian-container-test-api/1.7.0.Alpha10/arquillian-container-test-api-1.7.0.Alpha10.jar:/home/adrian/.m2/repository/org/jboss/shrinkwrap/shrinkwrap-api/1.2.6/shrinkwrap-api-1.2.6.jar:/home/adrian/.m2/repository/org/jboss/shrinkwrap/descriptors/shrinkwrap-descriptors-api-base/2.0.0/shrinkwrap-descriptors-api-base-2.0.0.jar:/home/adrian/.m2/repository/org/jboss/arquillian/container/arquillian-container-test-spi/1.7.0.Alpha10/arquillian-container-test-spi-1.7.0.Alpha10.jar:/home/adrian/.m2/repository/org/jboss/arquillian/core/arquillian-core-impl-base/1.7.0.Alpha10/arquillian-core-impl-base-1.7.0.Alpha10.jar:/home/adrian/.m2/repository/org/jboss/arquillian/test/arquillian-test-impl-base/1.7.0.Alpha10/arquillian-test-impl-base-1.7.0.Alpha10.jar:/home/adrian/.m2/repository/org/jboss/arquillian/container/arquillian-container-impl-base/1.7.0.Alpha10/arquillian-container-impl-base-1.7.0.Alpha10.jar:/home/adrian/.m2/repository/org/jboss/arquillian/config/arquillian-config-api/1.7.0.Alpha10/arquillian-config-api-1.7.0.Alpha10.jar:/home/adrian/.m2/repository/org/jboss/arquillian/config/arquillian-config-impl-base/1.7.0.Alpha10/arquillian-config-impl-base-1.7.0.Alpha10.jar:/home/adrian/.m2/repository/org/jboss/arquillian/config/arquillian-config-spi/1.7.0.Alpha10/arquillian-config-spi-1.7.0.Alpha10.jar:/home/adrian/.m2/repository/org/jboss/shrinkwrap/descriptors/shrinkwrap-descriptors-spi/2.0.0/shrinkwrap-descriptors-spi-2.0.0.jar:/home/adrian/.m2/repository/org/jboss/arquillian/container/arquillian-container-test-impl-base/1.7.0.Alpha10/arquillian-container-test-impl-base-1.7.0.Alpha10.jar:/home/adrian/.m2/repository/org/jboss/arquillian/junit5/arquillian-junit5-core/1.7.0.Alpha10/arquillian-junit5-core-1.7.0.Alpha10.jar:/home/adrian/.m2/repository/org/jboss/shrinkwrap/shrinkwrap-impl-base/1.2.6/shrinkwrap-impl-base-1.2.6.jar:/home/adrian/.m2/repository/org/jboss/shrinkwrap/shrinkwrap-spi/1.2.6/shrinkwrap-spi-1.2.6.jar:/home/adrian/.m2/repository/fish/payara/extras/payara-embedded-all/5.2022.1/payara-embedded-all-5.2022.1.jar:/home/adrian/.m2/repository/fish/payara/arquillian/arquillian-payara-server-embedded/2.4.6/arquillian-payara-server-embedded-2.4.6.jar:/home/adrian/.m2/repository/org/jboss/arquillian/container/arquillian-container-spi/1.7.0.Alpha10/arquillian-container-spi-1.7.0.Alpha10.jar:/home/adrian/.m2/repository/org/jboss/arquillian/protocol/arquillian-protocol-servlet/1.7.0.Alpha10/arquillian-protocol-servlet-1.7.0.Alpha10.jar:/home/adrian/.m2/repository/org/jboss/arquillian/testenricher/arquillian-testenricher-cdi/1.7.0.Alpha10/arquillian-testenricher-cdi-1.7.0.Alpha10.jar:/home/adrian/.m2/repository/org/jboss/arquillian/testenricher/arquillian-testenricher-ejb/1.7.0.Alpha10/arquillian-testenricher-ejb-1.7.0.Alpha10.jar:/home/adrian/.m2/repository/org/jboss/arquillian/testenricher/arquillian-testenricher-resource/1.7.0.Alpha10/arquillian-testenricher-resource-1.7.0.Alpha10.jar:/home/adrian/.m2/repository/org/jboss/arquillian/testenricher/arquillian-testenricher-initialcontext/1.7.0.Alpha10/arquillian-testenricher-initialcontext-1.7.0.Alpha10.jar:"/>
     <property name="env.HOME" value="/home/adrian"/>
-    <property name="com.sun.aas.instanceRootURI" value="file:/tmp/gfembed2763522546777173925tmp/"/>
+    <property name="com.sun.aas.instanceRootURI" value="file:/tmp/gfembed12724135745135464521tmp/"/>
     <property name="java.vm.vendor" value="Ubuntu"/>
     <property name="env.XDG_DATA_DIRS" value="/usr/share/cinnamon:/usr/share/gnome:/home/adrian/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share:/usr/share"/>
     <property name="user.timezone" value="America/El_Salvador"/>
@@ -118,7 +118,7 @@
     <property name="com.ctc.wstx.returnNullForDefaultNamespace" value="true"/>
     <property name="org.omg.CORBA.ORBClass" value="com.sun.corba.ee.impl.orb.ORBImpl"/>
     <property name="env.INSIDE_NEMO_PYTHON" value=""/>
-    <property name="surefire.real.class.path" value="/home/adrian/NetBeansProjects/Baches/target/surefire/surefirebooter6600933101204024763.jar"/>
+    <property name="surefire.real.class.path" value="/home/adrian/NetBeansProjects/Baches/target/surefire/surefirebooter1522325200825814828.jar"/>
     <property name="eclipselink.security.usedoprivileged" value="true"/>
     <property name="env.LANGUAGE" value="es_SV:es"/>
     <property name="env.DBUS_SESSION_BUS_ADDRESS" value="unix:path=/run/user/1000/bus"/>
@@ -127,34 +127,34 @@
     <property name="env.GTK_OVERLAY_SCROLLING" value="1"/>
     <property name="path.separator" value=":"/>
     <property name="os.version" value="5.4.0-89-generic"/>
-    <property name="com.sun.aas.installRootURI" value="file:/tmp/gfembed2763522546777173925tmp/"/>
-    <property name="java.endorsed.dirs" value="/tmp/gfembed2763522546777173925tmp/modules/endorsed:/tmp/gfembed2763522546777173925tmp/lib/endorsed"/>
+    <property name="com.sun.aas.installRootURI" value="file:/tmp/gfembed12724135745135464521tmp/"/>
+    <property name="java.endorsed.dirs" value="/tmp/gfembed12724135745135464521tmp/modules/endorsed:/tmp/gfembed12724135745135464521tmp/lib/endorsed"/>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
-    <property name="env.GIO_LAUNCHED_DESKTOP_FILE_PID" value="22835"/>
+    <property name="env.GIO_LAUNCHED_DESKTOP_FILE_PID" value="2459"/>
     <property name="env.XDG_SESSION_ID" value="c2"/>
     <property name="osgi.shell.telnet.maxconn" value="1"/>
     <property name="felix.fileinstall.bundles.startTransient" value="true"/>
-    <property name="com.sun.aas.configRoot" value="/tmp/gfembed2763522546777173925tmp/config"/>
+    <property name="com.sun.aas.configRoot" value="/tmp/gfembed12724135745135464521tmp/config"/>
     <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
     <property name="env.SHELL" value="/bin/bash"/>
     <property name="com.sun.aas.javaRoot" value="/usr/lib/jvm/java-11-openjdk-amd64"/>
     <property name="maven.ext.class.path" value="/home/adrian/netbeans-12.4/netbeans/java/maven-nblib/netbeans-eventspy.jar"/>
-    <property name="javax.net.ssl.keyStore" value="/tmp/gfembed2763522546777173925tmp/config/keystore.jks"/>
+    <property name="javax.net.ssl.keyStore" value="/tmp/gfembed12724135745135464521tmp/config/keystore.jks"/>
     <property name="env.XDG_SEAT_PATH" value="/org/freedesktop/DisplayManager/Seat0"/>
     <property name="env.GTK_MODULES" value="gail:atk-bridge"/>
-    <property name="java.security.auth.login.config" value="/tmp/gfembed2763522546777173925tmp/config/login.conf"/>
+    <property name="java.security.auth.login.config" value="/tmp/gfembed12724135745135464521tmp/config/login.conf"/>
     <property name="felix.fileinstall.disableConfigSave" value="false"/>
     <property name="java.vendor.url.bug" value="https://bugs.launchpad.net/ubuntu/+source/openjdk-lts"/>
     <property name="env.M2_HOME" value="/home/adrian/netbeans-12.4/netbeans/java/maven"/>
     <property name="env.MAVEN_CMD_LINE_ARGS" value=" -Dmaven.ext.class.path=/home/adrian/netbeans-12.4/netbeans/java/maven-nblib/netbeans-eventspy.jar install"/>
     <property name="env.XDG_CONFIG_DIRS" value="/etc/xdg/xdg-cinnamon:/etc/xdg"/>
-    <property name="catalina.home" value="/tmp/gfembed2763522546777173925tmp"/>
+    <property name="catalina.home" value="/tmp/gfembed12724135745135464521tmp"/>
     <property name="user.dir" value="/home/adrian/NetBeansProjects/Baches"/>
     <property name="os.arch" value="amd64"/>
     <property name="env.GTK3_MODULES" value="xapp-gtk3-module"/>
     <property name="javax.management.builder.initial" value="com.sun.enterprise.v3.admin.AppServerMBeanServerBuilder"/>
     <property name="osgi.shell.telnet.port" value="6666"/>
-    <property name="catalina.base" value="/tmp/gfembed2763522546777173925tmp"/>
+    <property name="catalina.base" value="/tmp/gfembed12724135745135464521tmp"/>
     <property name="env.XDG_CURRENT_DESKTOP" value="X-Cinnamon"/>
     <property name="env.DESKTOP_SESSION" value="cinnamon"/>
     <property name="env.MAVEN_PROJECTBASEDIR" value="/home/adrian/NetBeansProjects/Baches"/>
@@ -162,13 +162,13 @@
     <property name="java.vm.info" value="mixed mode, sharing"/>
     <property name="java.vm.version" value="11.0.13+8-Ubuntu-0ubuntu1.20.04"/>
     <property name="javax.security.jacc.PolicyConfigurationFactory.provider" value="com.sun.enterprise.security.provider.PolicyConfigurationFactoryImpl"/>
-    <property name="java.ext.dirs" value="/usr/lib/jvm/java-11-openjdk-amd64/lib/ext:/usr/lib/jvm/java-11-openjdk-amd64/jre/lib/ext:/tmp/gfembed2763522546777173925tmp/lib/ext"/>
+    <property name="java.ext.dirs" value="/usr/lib/jvm/java-11-openjdk-amd64/lib/ext:/usr/lib/jvm/java-11-openjdk-amd64/jre/lib/ext:/tmp/gfembed12724135745135464521tmp/lib/ext"/>
     <property name="java.class.version" value="55.0"/>
     <property name="env.USER" value="adrian"/>
     <property name="org.glassfish.grizzly.nio.DefaultSelectorHandler.force-selector-spin-detection" value="true"/>
   </properties>
-  <testcase name="testFindAll" classname="com.mycompany.baches.resources.ObjetoEstadoResourceIT" time="0.312">
-    <system-out><![CDATA[2020e7a6-bf3f-4c32-95a6-229b56b4c8e4.war:
+  <testcase name="testFindAll" classname="com.mycompany.baches.resources.ObjetoEstadoResourceIT" time="0.361">
+    <system-out><![CDATA[72f26fc0-17c6-4701-b782-14460051fa09.war:
 /WEB-INF/
 /WEB-INF/classes/
 /WEB-INF/classes/com/
@@ -192,691 +192,691 @@
 /WEB-INF/classes/META-INF/sql/
 /WEB-INF/classes/META-INF/sql/datos.sql
 /WEB-INF/beans.xml
-2022-05-30 22:48:34 jdbc[3]: 
+2022-06-01 23:16:04 jdbc[3]: 
 /**/conn0.getClientInfo();
-2022-05-30 22:48:34 jdbc[3]: 
+2022-06-01 23:16:04 jdbc[3]: 
 /**/DatabaseMetaData dbMeta3 = conn0.getMetaData();
-2022-05-30 22:48:34 jdbc[3]: 
+2022-06-01 23:16:04 jdbc[3]: 
 /**/dbMeta3.getDatabaseProductName();
-2022-05-30 22:48:34 jdbc[3]: 
+2022-06-01 23:16:04 jdbc[3]: 
 /**/dbMeta3.getDatabaseProductVersion();
-2022-05-30 22:48:34 jdbc[3]: 
+2022-06-01 23:16:04 jdbc[3]: 
 /**/dbMeta3.getDatabaseMajorVersion();
-2022-05-30 22:48:34 jdbc[3]: 
+2022-06-01 23:16:04 jdbc[3]: 
 /**/DatabaseMetaData dbMeta4 = conn0.getMetaData();
-2022-05-30 22:48:34 jdbc[3]: 
+2022-06-01 23:16:04 jdbc[3]: 
 /**/dbMeta4.getDriverName();
-2022-05-30 22:48:34 jdbc[3]: 
+2022-06-01 23:16:04 jdbc[3]: 
 /**/conn0.setClientInfo(properties);
-2022-05-30 22:48:34 jdbc[3]: 
+2022-06-01 23:16:04 jdbc[3]: 
 /**/conn0.getClientInfo();
-2022-05-30 22:48:34 jdbc[3]: 
+2022-06-01 23:16:04 jdbc[3]: 
 /**/conn0.setClientInfo(properties);
-2022-05-30 22:48:34 jdbc[3]: 
+2022-06-01 23:16:04 jdbc[3]: 
 /**/conn0.getClientInfo();
-2022-05-30 22:48:34 jdbc[3]: 
+2022-06-01 23:16:04 jdbc[3]: 
 /**/conn0.setClientInfo(properties);
-2022-05-30 22:48:34 jdbc[3]: 
+2022-06-01 23:16:04 jdbc[3]: 
 /**/conn0.getClientInfo();
-2022-05-30 22:48:34 jdbc[3]: 
+2022-06-01 23:16:04 jdbc[3]: 
 /**/PreparedStatement prep44 = conn0.prepareStatement("SELECT 1 FROM public.estado", 1003, 1007);
-2022-05-30 22:48:34 jdbc[3]: Plan       : calculate cost for plan [PUBLIC.ESTADO]
-2022-05-30 22:48:34 jdbc[3]: Plan       :   for table filter PUBLIC.ESTADO
-2022-05-30 22:48:34 jdbc[3]: Table      :     potential plan item cost 10,230 index PUBLIC.ESTADO.tableScan
-2022-05-30 22:48:34 jdbc[3]: Table      :     potential plan item cost 10,240 index PUBLIC.PRIMARY_KEY_7
-2022-05-30 22:48:34 jdbc[3]: Plan       :   best plan item cost 10,230 index PUBLIC.ESTADO.tableScan
-2022-05-30 22:48:34 jdbc[3]: Plan       : plan cost 10,231
-2022-05-30 22:48:34 jdbc[3]: 
+2022-06-01 23:16:04 jdbc[3]: Plan       : calculate cost for plan [PUBLIC.ESTADO]
+2022-06-01 23:16:04 jdbc[3]: Plan       :   for table filter PUBLIC.ESTADO
+2022-06-01 23:16:04 jdbc[3]: Table      :     potential plan item cost 10,230 index PUBLIC.ESTADO.tableScan
+2022-06-01 23:16:04 jdbc[3]: Table      :     potential plan item cost 10,240 index PUBLIC.PRIMARY_KEY_7
+2022-06-01 23:16:04 jdbc[3]: Plan       :   best plan item cost 10,230 index PUBLIC.ESTADO.tableScan
+2022-06-01 23:16:04 jdbc[3]: Plan       : plan cost 10,231
+2022-06-01 23:16:04 jdbc[3]: 
 /**/prep44.setMaxRows(1);
-2022-05-30 22:48:34 jdbc[3]: 
+2022-06-01 23:16:04 jdbc[3]: 
 /**/ResultSet rs14 = prep44.executeQuery();
-2022-05-30 22:48:34 jdbc[3]: 
+2022-06-01 23:16:04 jdbc[3]: 
 /*SQL #:1*/SELECT 1 FROM public.estado;
-2022-05-30 22:48:34 jdbc[3]: 
+2022-06-01 23:16:04 jdbc[3]: 
 /**/ResultSetMetaData rsMeta9 = rs14.getMetaData();
-2022-05-30 22:48:34 jdbc[3]: 
+2022-06-01 23:16:04 jdbc[3]: 
 /**/conn0.getCatalog();
-2022-05-30 22:48:34 jdbc[3]: 
+2022-06-01 23:16:04 jdbc[3]: 
 /**/rsMeta9.getColumnCount();
-2022-05-30 22:48:34 jdbc[3]: 
+2022-06-01 23:16:04 jdbc[3]: 
 /**/rsMeta9.getColumnCount();
-2022-05-30 22:48:34 jdbc[3]: 
+2022-06-01 23:16:04 jdbc[3]: 
 /**/rsMeta9.getColumnLabel(1);
-2022-05-30 22:48:34 jdbc[3]: 
+2022-06-01 23:16:04 jdbc[3]: 
 /**/rsMeta9.getColumnCount();
-2022-05-30 22:48:34 jdbc[3]: 
+2022-06-01 23:16:04 jdbc[3]: 
 /**/ResultSetMetaData rsMeta10 = rs14.getMetaData();
-2022-05-30 22:48:34 jdbc[3]: 
+2022-06-01 23:16:04 jdbc[3]: 
 /**/conn0.getCatalog();
-2022-05-30 22:48:34 jdbc[3]: 
+2022-06-01 23:16:04 jdbc[3]: 
 /**/rsMeta10.getColumnCount();
-2022-05-30 22:48:34 jdbc[3]: 
+2022-06-01 23:16:04 jdbc[3]: 
 /**/rs14.next();
-2022-05-30 22:48:34 jdbc[3]: 
+2022-06-01 23:16:04 jdbc[3]: 
 /**/rsMeta10.getColumnType(1);
-2022-05-30 22:48:34 jdbc[3]: 
+2022-06-01 23:16:04 jdbc[3]: 
 /**/rs14.getObject(1);
-2022-05-30 22:48:34 jdbc[3]: 
+2022-06-01 23:16:04 jdbc[3]: 
 /**/rs14.next();
-2022-05-30 22:48:34 jdbc[3]: 
+2022-06-01 23:16:04 jdbc[3]: 
 /**/rs14.close();
-2022-05-30 22:48:34 jdbc[3]: 
+2022-06-01 23:16:04 jdbc[3]: 
 /**/prep44.close();
-2022-05-30 22:48:34 jdbc[3]: 
+2022-06-01 23:16:04 jdbc[3]: 
 /**/conn0.setClientInfo(properties);
-2022-05-30 22:48:34 jdbc[3]: 
+2022-06-01 23:16:04 jdbc[3]: 
 /**/conn0.getClientInfo();
-2022-05-30 22:48:34 jdbc[3]: 
+2022-06-01 23:16:04 jdbc[3]: 
 /**/PreparedStatement prep45 = conn0.prepareStatement("SELECT 1 FROM public.objeto", 1003, 1007);
-2022-05-30 22:48:34 jdbc[3]: Plan       : calculate cost for plan [PUBLIC.OBJETO]
-2022-05-30 22:48:34 jdbc[3]: Plan       :   for table filter PUBLIC.OBJETO
-2022-05-30 22:48:34 jdbc[3]: Table      :     potential plan item cost 10,230 index PUBLIC.OBJETO.tableScan
-2022-05-30 22:48:34 jdbc[3]: Table      :     potential plan item cost 10,240 index PUBLIC.PRIMARY_KEY_8
-2022-05-30 22:48:34 jdbc[3]: Table      :     potential plan item cost 10,050 index PUBLIC.FK_OBJETO_ID_TIPO_OBJETO_INDEX_8
-2022-05-30 22:48:34 jdbc[3]: Plan       :   best plan item cost 10,050 index PUBLIC.FK_OBJETO_ID_TIPO_OBJETO_INDEX_8
-2022-05-30 22:48:34 jdbc[3]: Plan       : plan cost 10,051
-2022-05-30 22:48:34 jdbc[3]: 
+2022-06-01 23:16:04 jdbc[3]: Plan       : calculate cost for plan [PUBLIC.OBJETO]
+2022-06-01 23:16:04 jdbc[3]: Plan       :   for table filter PUBLIC.OBJETO
+2022-06-01 23:16:04 jdbc[3]: Table      :     potential plan item cost 10,230 index PUBLIC.OBJETO.tableScan
+2022-06-01 23:16:04 jdbc[3]: Table      :     potential plan item cost 10,240 index PUBLIC.PRIMARY_KEY_8
+2022-06-01 23:16:04 jdbc[3]: Table      :     potential plan item cost 10,050 index PUBLIC.FK_OBJETO_ID_TIPO_OBJETO_INDEX_8
+2022-06-01 23:16:04 jdbc[3]: Plan       :   best plan item cost 10,050 index PUBLIC.FK_OBJETO_ID_TIPO_OBJETO_INDEX_8
+2022-06-01 23:16:04 jdbc[3]: Plan       : plan cost 10,051
+2022-06-01 23:16:04 jdbc[3]: 
 /**/prep45.setMaxRows(1);
-2022-05-30 22:48:34 jdbc[3]: 
+2022-06-01 23:16:04 jdbc[3]: 
 /**/ResultSet rs15 = prep45.executeQuery();
-2022-05-30 22:48:34 jdbc[3]: 
+2022-06-01 23:16:04 jdbc[3]: 
 /*SQL #:1*/SELECT 1 FROM public.objeto;
-2022-05-30 22:48:34 jdbc[3]: 
+2022-06-01 23:16:04 jdbc[3]: 
 /**/ResultSetMetaData rsMeta11 = rs15.getMetaData();
-2022-05-30 22:48:34 jdbc[3]: 
+2022-06-01 23:16:04 jdbc[3]: 
 /**/conn0.getCatalog();
-2022-05-30 22:48:34 jdbc[3]: 
+2022-06-01 23:16:04 jdbc[3]: 
 /**/rsMeta11.getColumnCount();
-2022-05-30 22:48:34 jdbc[3]: 
+2022-06-01 23:16:04 jdbc[3]: 
 /**/rsMeta11.getColumnCount();
-2022-05-30 22:48:34 jdbc[3]: 
+2022-06-01 23:16:04 jdbc[3]: 
 /**/rsMeta11.getColumnLabel(1);
-2022-05-30 22:48:34 jdbc[3]: 
+2022-06-01 23:16:04 jdbc[3]: 
 /**/rsMeta11.getColumnCount();
-2022-05-30 22:48:34 jdbc[3]: 
+2022-06-01 23:16:04 jdbc[3]: 
 /**/ResultSetMetaData rsMeta12 = rs15.getMetaData();
-2022-05-30 22:48:34 jdbc[3]: 
+2022-06-01 23:16:04 jdbc[3]: 
 /**/conn0.getCatalog();
-2022-05-30 22:48:34 jdbc[3]: 
+2022-06-01 23:16:04 jdbc[3]: 
 /**/rsMeta12.getColumnCount();
-2022-05-30 22:48:34 jdbc[3]: 
+2022-06-01 23:16:04 jdbc[3]: 
 /**/rs15.next();
-2022-05-30 22:48:34 jdbc[3]: 
+2022-06-01 23:16:04 jdbc[3]: 
 /**/rsMeta12.getColumnType(1);
-2022-05-30 22:48:34 jdbc[3]: 
+2022-06-01 23:16:04 jdbc[3]: 
 /**/rs15.getObject(1);
-2022-05-30 22:48:34 jdbc[3]: 
+2022-06-01 23:16:04 jdbc[3]: 
 /**/rs15.next();
-2022-05-30 22:48:34 jdbc[3]: 
+2022-06-01 23:16:04 jdbc[3]: 
 /**/rs15.close();
-2022-05-30 22:48:34 jdbc[3]: 
+2022-06-01 23:16:04 jdbc[3]: 
 /**/prep45.close();
-2022-05-30 22:48:34 jdbc[3]: 
+2022-06-01 23:16:04 jdbc[3]: 
 /**/conn0.setClientInfo(properties);
-2022-05-30 22:48:34 jdbc[3]: 
+2022-06-01 23:16:04 jdbc[3]: 
 /**/conn0.getClientInfo();
-2022-05-30 22:48:34 jdbc[3]: 
+2022-06-01 23:16:04 jdbc[3]: 
 /**/PreparedStatement prep46 = conn0.prepareStatement("SELECT 1 FROM public.objeto_estado", 1003, 1007);
-2022-05-30 22:48:34 jdbc[3]: Plan       : calculate cost for plan [PUBLIC.OBJETO_ESTADO]
-2022-05-30 22:48:34 jdbc[3]: Plan       :   for table filter PUBLIC.OBJETO_ESTADO
-2022-05-30 22:48:34 jdbc[3]: Table      :     potential plan item cost 10,230 index PUBLIC.OBJETO_ESTADO.tableScan
-2022-05-30 22:48:34 jdbc[3]: Table      :     potential plan item cost 10,240 index PUBLIC.PRIMARY_KEY_4
-2022-05-30 22:48:34 jdbc[3]: Table      :     potential plan item cost 10,050 index PUBLIC.FK_OBJETO_ESTADO_ID_OBJETO_INDEX_4
-2022-05-30 22:48:34 jdbc[3]: Table      :     potential plan item cost 10,050 index PUBLIC.FK_OBJETO_ESTADO_ID_ESTADO_INDEX_4
-2022-05-30 22:48:34 jdbc[3]: Plan       :   best plan item cost 10,050 index PUBLIC.FK_OBJETO_ESTADO_ID_OBJETO_INDEX_4
-2022-05-30 22:48:34 jdbc[3]: Plan       : plan cost 10,051
-2022-05-30 22:48:34 jdbc[3]: 
+2022-06-01 23:16:04 jdbc[3]: Plan       : calculate cost for plan [PUBLIC.OBJETO_ESTADO]
+2022-06-01 23:16:04 jdbc[3]: Plan       :   for table filter PUBLIC.OBJETO_ESTADO
+2022-06-01 23:16:04 jdbc[3]: Table      :     potential plan item cost 10,230 index PUBLIC.OBJETO_ESTADO.tableScan
+2022-06-01 23:16:04 jdbc[3]: Table      :     potential plan item cost 10,240 index PUBLIC.PRIMARY_KEY_4
+2022-06-01 23:16:04 jdbc[3]: Table      :     potential plan item cost 10,050 index PUBLIC.FK_OBJETO_ESTADO_ID_OBJETO_INDEX_4
+2022-06-01 23:16:04 jdbc[3]: Table      :     potential plan item cost 10,050 index PUBLIC.FK_OBJETO_ESTADO_ID_ESTADO_INDEX_4
+2022-06-01 23:16:04 jdbc[3]: Plan       :   best plan item cost 10,050 index PUBLIC.FK_OBJETO_ESTADO_ID_OBJETO_INDEX_4
+2022-06-01 23:16:04 jdbc[3]: Plan       : plan cost 10,051
+2022-06-01 23:16:04 jdbc[3]: 
 /**/prep46.setMaxRows(1);
-2022-05-30 22:48:34 jdbc[3]: 
+2022-06-01 23:16:04 jdbc[3]: 
 /**/ResultSet rs16 = prep46.executeQuery();
-2022-05-30 22:48:34 jdbc[3]: 
+2022-06-01 23:16:04 jdbc[3]: 
 /*SQL #:1*/SELECT 1 FROM public.objeto_estado;
-2022-05-30 22:48:34 jdbc[3]: 
+2022-06-01 23:16:04 jdbc[3]: 
 /**/ResultSetMetaData rsMeta13 = rs16.getMetaData();
-2022-05-30 22:48:34 jdbc[3]: 
+2022-06-01 23:16:04 jdbc[3]: 
 /**/conn0.getCatalog();
-2022-05-30 22:48:34 jdbc[3]: 
+2022-06-01 23:16:04 jdbc[3]: 
 /**/rsMeta13.getColumnCount();
-2022-05-30 22:48:34 jdbc[3]: 
+2022-06-01 23:16:04 jdbc[3]: 
 /**/rsMeta13.getColumnCount();
-2022-05-30 22:48:34 jdbc[3]: 
+2022-06-01 23:16:04 jdbc[3]: 
 /**/rsMeta13.getColumnLabel(1);
-2022-05-30 22:48:34 jdbc[3]: 
+2022-06-01 23:16:04 jdbc[3]: 
 /**/rsMeta13.getColumnCount();
-2022-05-30 22:48:34 jdbc[3]: 
+2022-06-01 23:16:04 jdbc[3]: 
 /**/ResultSetMetaData rsMeta14 = rs16.getMetaData();
-2022-05-30 22:48:34 jdbc[3]: 
+2022-06-01 23:16:04 jdbc[3]: 
 /**/conn0.getCatalog();
-2022-05-30 22:48:34 jdbc[3]: 
+2022-06-01 23:16:04 jdbc[3]: 
 /**/rsMeta14.getColumnCount();
-2022-05-30 22:48:34 jdbc[3]: 
+2022-06-01 23:16:04 jdbc[3]: 
 /**/rs16.next();
-2022-05-30 22:48:34 jdbc[3]: 
+2022-06-01 23:16:04 jdbc[3]: 
 /**/rsMeta14.getColumnType(1);
-2022-05-30 22:48:34 jdbc[3]: 
+2022-06-01 23:16:04 jdbc[3]: 
 /**/rs16.getObject(1);
-2022-05-30 22:48:34 jdbc[3]: 
+2022-06-01 23:16:04 jdbc[3]: 
 /**/rs16.next();
-2022-05-30 22:48:34 jdbc[3]: 
+2022-06-01 23:16:04 jdbc[3]: 
 /**/rs16.close();
-2022-05-30 22:48:34 jdbc[3]: 
+2022-06-01 23:16:04 jdbc[3]: 
 /**/prep46.close();
-2022-05-30 22:48:34 jdbc[3]: 
+2022-06-01 23:16:04 jdbc[3]: 
 /**/conn0.setClientInfo(properties);
-2022-05-30 22:48:34 jdbc[3]: 
+2022-06-01 23:16:04 jdbc[3]: 
 /**/conn0.getClientInfo();
-2022-05-30 22:48:34 jdbc[3]: 
+2022-06-01 23:16:04 jdbc[3]: 
 /**/PreparedStatement prep47 = conn0.prepareStatement("SELECT 1 FROM public.ruta", 1003, 1007);
-2022-05-30 22:48:34 jdbc[3]: Plan       : calculate cost for plan [PUBLIC.RUTA]
-2022-05-30 22:48:34 jdbc[3]: Plan       :   for table filter PUBLIC.RUTA
-2022-05-30 22:48:34 jdbc[3]: Table      :     potential plan item cost 10,230 index PUBLIC.RUTA.tableScan
-2022-05-30 22:48:34 jdbc[3]: Table      :     potential plan item cost 10,240 index PUBLIC.PRIMARY_KEY_2
-2022-05-30 22:48:34 jdbc[3]: Plan       :   best plan item cost 10,230 index PUBLIC.RUTA.tableScan
-2022-05-30 22:48:34 jdbc[3]: Plan       : plan cost 10,231
-2022-05-30 22:48:34 jdbc[3]: 
+2022-06-01 23:16:04 jdbc[3]: Plan       : calculate cost for plan [PUBLIC.RUTA]
+2022-06-01 23:16:04 jdbc[3]: Plan       :   for table filter PUBLIC.RUTA
+2022-06-01 23:16:04 jdbc[3]: Table      :     potential plan item cost 10,230 index PUBLIC.RUTA.tableScan
+2022-06-01 23:16:04 jdbc[3]: Table      :     potential plan item cost 10,240 index PUBLIC.PRIMARY_KEY_2
+2022-06-01 23:16:04 jdbc[3]: Plan       :   best plan item cost 10,230 index PUBLIC.RUTA.tableScan
+2022-06-01 23:16:04 jdbc[3]: Plan       : plan cost 10,231
+2022-06-01 23:16:04 jdbc[3]: 
 /**/prep47.setMaxRows(1);
-2022-05-30 22:48:34 jdbc[3]: 
+2022-06-01 23:16:04 jdbc[3]: 
 /**/ResultSet rs17 = prep47.executeQuery();
-2022-05-30 22:48:34 jdbc[3]: 
+2022-06-01 23:16:04 jdbc[3]: 
 /*SQL #:1*/SELECT 1 FROM public.ruta;
-2022-05-30 22:48:34 jdbc[3]: 
+2022-06-01 23:16:04 jdbc[3]: 
 /**/ResultSetMetaData rsMeta15 = rs17.getMetaData();
-2022-05-30 22:48:34 jdbc[3]: 
+2022-06-01 23:16:04 jdbc[3]: 
 /**/conn0.getCatalog();
-2022-05-30 22:48:34 jdbc[3]: 
+2022-06-01 23:16:04 jdbc[3]: 
 /**/rsMeta15.getColumnCount();
-2022-05-30 22:48:34 jdbc[3]: 
+2022-06-01 23:16:04 jdbc[3]: 
 /**/rsMeta15.getColumnCount();
-2022-05-30 22:48:34 jdbc[3]: 
+2022-06-01 23:16:04 jdbc[3]: 
 /**/rsMeta15.getColumnLabel(1);
-2022-05-30 22:48:34 jdbc[3]: 
+2022-06-01 23:16:04 jdbc[3]: 
 /**/rsMeta15.getColumnCount();
-2022-05-30 22:48:34 jdbc[3]: 
+2022-06-01 23:16:04 jdbc[3]: 
 /**/ResultSetMetaData rsMeta16 = rs17.getMetaData();
-2022-05-30 22:48:34 jdbc[3]: 
+2022-06-01 23:16:04 jdbc[3]: 
 /**/conn0.getCatalog();
-2022-05-30 22:48:34 jdbc[3]: 
+2022-06-01 23:16:04 jdbc[3]: 
 /**/rsMeta16.getColumnCount();
-2022-05-30 22:48:34 jdbc[3]: 
+2022-06-01 23:16:04 jdbc[3]: 
 /**/rs17.next();
-2022-05-30 22:48:34 jdbc[3]: 
+2022-06-01 23:16:04 jdbc[3]: 
 /**/rsMeta16.getColumnType(1);
-2022-05-30 22:48:34 jdbc[3]: 
+2022-06-01 23:16:04 jdbc[3]: 
 /**/rs17.getObject(1);
-2022-05-30 22:48:34 jdbc[3]: 
+2022-06-01 23:16:04 jdbc[3]: 
 /**/rs17.next();
-2022-05-30 22:48:34 jdbc[3]: 
+2022-06-01 23:16:04 jdbc[3]: 
 /**/rs17.close();
-2022-05-30 22:48:34 jdbc[3]: 
+2022-06-01 23:16:04 jdbc[3]: 
 /**/prep47.close();
-2022-05-30 22:48:34 jdbc[3]: 
+2022-06-01 23:16:04 jdbc[3]: 
 /**/conn0.setClientInfo(properties);
-2022-05-30 22:48:34 jdbc[3]: 
+2022-06-01 23:16:04 jdbc[3]: 
 /**/conn0.getClientInfo();
-2022-05-30 22:48:34 jdbc[3]: 
+2022-06-01 23:16:04 jdbc[3]: 
 /**/PreparedStatement prep48 = conn0.prepareStatement("SELECT 1 FROM public.tipo_objeto", 1003, 1007);
-2022-05-30 22:48:34 jdbc[3]: Plan       : calculate cost for plan [PUBLIC.TIPO_OBJETO]
-2022-05-30 22:48:34 jdbc[3]: Plan       :   for table filter PUBLIC.TIPO_OBJETO
-2022-05-30 22:48:34 jdbc[3]: Table      :     potential plan item cost 10,230 index PUBLIC.TIPO_OBJETO.tableScan
-2022-05-30 22:48:34 jdbc[3]: Table      :     potential plan item cost 10,240 index PUBLIC.PRIMARY_KEY_1
-2022-05-30 22:48:34 jdbc[3]: Plan       :   best plan item cost 10,230 index PUBLIC.TIPO_OBJETO.tableScan
-2022-05-30 22:48:34 jdbc[3]: Plan       : plan cost 10,231
-2022-05-30 22:48:34 jdbc[3]: 
+2022-06-01 23:16:04 jdbc[3]: Plan       : calculate cost for plan [PUBLIC.TIPO_OBJETO]
+2022-06-01 23:16:04 jdbc[3]: Plan       :   for table filter PUBLIC.TIPO_OBJETO
+2022-06-01 23:16:04 jdbc[3]: Table      :     potential plan item cost 10,230 index PUBLIC.TIPO_OBJETO.tableScan
+2022-06-01 23:16:04 jdbc[3]: Table      :     potential plan item cost 10,240 index PUBLIC.PRIMARY_KEY_1
+2022-06-01 23:16:04 jdbc[3]: Plan       :   best plan item cost 10,230 index PUBLIC.TIPO_OBJETO.tableScan
+2022-06-01 23:16:04 jdbc[3]: Plan       : plan cost 10,231
+2022-06-01 23:16:04 jdbc[3]: 
 /**/prep48.setMaxRows(1);
-2022-05-30 22:48:34 jdbc[3]: 
+2022-06-01 23:16:04 jdbc[3]: 
 /**/ResultSet rs18 = prep48.executeQuery();
-2022-05-30 22:48:34 jdbc[3]: 
+2022-06-01 23:16:04 jdbc[3]: 
 /*SQL #:1*/SELECT 1 FROM public.tipo_objeto;
-2022-05-30 22:48:34 jdbc[3]: 
+2022-06-01 23:16:04 jdbc[3]: 
 /**/ResultSetMetaData rsMeta17 = rs18.getMetaData();
-2022-05-30 22:48:34 jdbc[3]: 
+2022-06-01 23:16:04 jdbc[3]: 
 /**/conn0.getCatalog();
-2022-05-30 22:48:34 jdbc[3]: 
+2022-06-01 23:16:04 jdbc[3]: 
 /**/rsMeta17.getColumnCount();
-2022-05-30 22:48:34 jdbc[3]: 
+2022-06-01 23:16:04 jdbc[3]: 
 /**/rsMeta17.getColumnCount();
-2022-05-30 22:48:34 jdbc[3]: 
+2022-06-01 23:16:04 jdbc[3]: 
 /**/rsMeta17.getColumnLabel(1);
-2022-05-30 22:48:34 jdbc[3]: 
+2022-06-01 23:16:04 jdbc[3]: 
 /**/rsMeta17.getColumnCount();
-2022-05-30 22:48:34 jdbc[3]: 
+2022-06-01 23:16:04 jdbc[3]: 
 /**/ResultSetMetaData rsMeta18 = rs18.getMetaData();
-2022-05-30 22:48:34 jdbc[3]: 
+2022-06-01 23:16:04 jdbc[3]: 
 /**/conn0.getCatalog();
-2022-05-30 22:48:34 jdbc[3]: 
+2022-06-01 23:16:04 jdbc[3]: 
 /**/rsMeta18.getColumnCount();
-2022-05-30 22:48:34 jdbc[3]: 
+2022-06-01 23:16:04 jdbc[3]: 
 /**/rs18.next();
-2022-05-30 22:48:34 jdbc[3]: 
+2022-06-01 23:16:04 jdbc[3]: 
 /**/rsMeta18.getColumnType(1);
-2022-05-30 22:48:34 jdbc[3]: 
+2022-06-01 23:16:04 jdbc[3]: 
 /**/rs18.getObject(1);
-2022-05-30 22:48:34 jdbc[3]: 
+2022-06-01 23:16:04 jdbc[3]: 
 /**/rs18.next();
-2022-05-30 22:48:34 jdbc[3]: 
+2022-06-01 23:16:04 jdbc[3]: 
 /**/rs18.close();
-2022-05-30 22:48:34 jdbc[3]: 
+2022-06-01 23:16:04 jdbc[3]: 
 /**/prep48.close();
-2022-05-30 22:48:34 jdbc[3]: 
+2022-06-01 23:16:04 jdbc[3]: 
 /**/conn0.setClientInfo(properties);
-2022-05-30 22:48:34 jdbc[3]: 
+2022-06-01 23:16:04 jdbc[3]: 
 /**/conn0.getClientInfo();
-2022-05-30 22:48:34 jdbc[3]: 
+2022-06-01 23:16:04 jdbc[3]: 
 /**/PreparedStatement prep49 = conn0.prepareStatement("INSERT INTO estado (nombre, fecha_creacion) VALUES('Insertado desde datos.sql','2022-05-01');", 1003, 1007);
-2022-05-30 22:48:34 jdbc[3]: 
+2022-06-01 23:16:04 jdbc[3]: 
 /**/prep49.executeUpdate();
-2022-05-30 22:48:34 lock: 3 shared read lock requesting for ESTADO 
-2022-05-30 22:48:34 lock: 3 shared read lock ok ESTADO 
-2022-05-30 22:48:34 jdbc[3]: 
+2022-06-01 23:16:04 lock: 3 shared read lock requesting for ESTADO 
+2022-06-01 23:16:04 lock: 3 shared read lock ok ESTADO 
+2022-06-01 23:16:04 jdbc[3]: 
 /*SQL #:1*/INSERT INTO estado (nombre, fecha_creacion) VALUES('Insertado desde datos.sql','2022-05-01');
-2022-05-30 22:48:34 lock: 3 shared read lock unlock ESTADO 
-2022-05-30 22:48:34 jdbc[3]: 
+2022-06-01 23:16:04 lock: 3 shared read lock unlock ESTADO 
+2022-06-01 23:16:04 jdbc[3]: 
 /**/prep49.close();
-2022-05-30 22:48:34 jdbc[3]: 
+2022-06-01 23:16:04 jdbc[3]: 
 /**/conn0.setClientInfo(properties);
-2022-05-30 22:48:34 jdbc[3]: 
+2022-06-01 23:16:04 jdbc[3]: 
 /**/conn0.getClientInfo();
-2022-05-30 22:48:34 jdbc[3]: 
+2022-06-01 23:16:04 jdbc[3]: 
 /**/PreparedStatement prep50 = conn0.prepareStatement("INSERT INTO estado (nombre, fecha_creacion) VALUES('Insertado desde datos.sql','2022-05-02');", 1003, 1007);
-2022-05-30 22:48:34 jdbc[3]: 
+2022-06-01 23:16:04 jdbc[3]: 
 /**/prep50.executeUpdate();
-2022-05-30 22:48:34 lock: 3 shared read lock requesting for ESTADO 
-2022-05-30 22:48:34 lock: 3 shared read lock ok ESTADO 
-2022-05-30 22:48:34 jdbc[3]: 
+2022-06-01 23:16:04 lock: 3 shared read lock requesting for ESTADO 
+2022-06-01 23:16:04 lock: 3 shared read lock ok ESTADO 
+2022-06-01 23:16:04 jdbc[3]: 
 /*SQL #:1*/INSERT INTO estado (nombre, fecha_creacion) VALUES('Insertado desde datos.sql','2022-05-02');
-2022-05-30 22:48:34 lock: 3 shared read lock unlock ESTADO 
-2022-05-30 22:48:34 jdbc[3]: 
+2022-06-01 23:16:04 lock: 3 shared read lock unlock ESTADO 
+2022-06-01 23:16:04 jdbc[3]: 
 /**/prep50.close();
-2022-05-30 22:48:34 jdbc[3]: 
+2022-06-01 23:16:04 jdbc[3]: 
 /**/conn0.setClientInfo(properties);
-2022-05-30 22:48:34 jdbc[3]: 
+2022-06-01 23:16:04 jdbc[3]: 
 /**/conn0.getClientInfo();
-2022-05-30 22:48:34 jdbc[3]: 
+2022-06-01 23:16:04 jdbc[3]: 
 /**/PreparedStatement prep51 = conn0.prepareStatement("INSERT INTO estado (nombre, fecha_creacion) VALUES('Insertado desde datos.sql','2022-05-03');", 1003, 1007);
-2022-05-30 22:48:34 jdbc[3]: 
+2022-06-01 23:16:04 jdbc[3]: 
 /**/prep51.executeUpdate();
-2022-05-30 22:48:34 lock: 3 shared read lock requesting for ESTADO 
-2022-05-30 22:48:34 lock: 3 shared read lock ok ESTADO 
-2022-05-30 22:48:34 jdbc[3]: 
+2022-06-01 23:16:04 lock: 3 shared read lock requesting for ESTADO 
+2022-06-01 23:16:04 lock: 3 shared read lock ok ESTADO 
+2022-06-01 23:16:04 jdbc[3]: 
 /*SQL #:1*/INSERT INTO estado (nombre, fecha_creacion) VALUES('Insertado desde datos.sql','2022-05-03');
-2022-05-30 22:48:34 lock: 3 shared read lock unlock ESTADO 
-2022-05-30 22:48:34 jdbc[3]: 
+2022-06-01 23:16:04 lock: 3 shared read lock unlock ESTADO 
+2022-06-01 23:16:04 jdbc[3]: 
 /**/prep51.close();
-2022-05-30 22:48:34 jdbc[3]: 
+2022-06-01 23:16:04 jdbc[3]: 
 /**/conn0.setClientInfo(properties);
-2022-05-30 22:48:34 jdbc[3]: 
+2022-06-01 23:16:04 jdbc[3]: 
 /**/conn0.getClientInfo();
-2022-05-30 22:48:34 jdbc[3]: 
+2022-06-01 23:16:04 jdbc[3]: 
 /**/PreparedStatement prep52 = conn0.prepareStatement("INSERT INTO objeto (longitud, latitud,nombre) VALUES('1.3845285035','5.3456798788','Insertado desde datos.sql');", 1003, 1007);
-2022-05-30 22:48:34 jdbc[3]: 
+2022-06-01 23:16:04 jdbc[3]: 
 /**/prep52.executeUpdate();
-2022-05-30 22:48:34 lock: 3 shared read lock requesting for OBJETO 
-2022-05-30 22:48:34 lock: 3 shared read lock ok OBJETO 
-2022-05-30 22:48:34 jdbc[3]: 
+2022-06-01 23:16:04 lock: 3 shared read lock requesting for OBJETO 
+2022-06-01 23:16:04 lock: 3 shared read lock ok OBJETO 
+2022-06-01 23:16:04 jdbc[3]: 
 /*SQL #:1*/INSERT INTO objeto (longitud, latitud,nombre) VALUES('1.3845285035','5.3456798788','Insertado desde datos.sql');
-2022-05-30 22:48:34 lock: 3 shared read lock unlock OBJETO 
-2022-05-30 22:48:34 jdbc[3]: 
+2022-06-01 23:16:04 lock: 3 shared read lock unlock OBJETO 
+2022-06-01 23:16:04 jdbc[3]: 
 /**/prep52.close();
-2022-05-30 22:48:34 jdbc[3]: 
+2022-06-01 23:16:04 jdbc[3]: 
 /**/conn0.setClientInfo(properties);
-2022-05-30 22:48:34 jdbc[3]: 
+2022-06-01 23:16:04 jdbc[3]: 
 /**/conn0.getClientInfo();
-2022-05-30 22:48:34 jdbc[3]: 
+2022-06-01 23:16:04 jdbc[3]: 
 /**/PreparedStatement prep53 = conn0.prepareStatement("INSERT INTO objeto (longitud, latitud,nombre) VALUES('2.5392273491','3.5559444444','Insertado desde datos.sql');", 1003, 1007);
-2022-05-30 22:48:34 jdbc[3]: 
+2022-06-01 23:16:04 jdbc[3]: 
 /**/prep53.executeUpdate();
-2022-05-30 22:48:34 lock: 3 shared read lock requesting for OBJETO 
-2022-05-30 22:48:34 lock: 3 shared read lock ok OBJETO 
-2022-05-30 22:48:34 jdbc[3]: 
+2022-06-01 23:16:04 lock: 3 shared read lock requesting for OBJETO 
+2022-06-01 23:16:04 lock: 3 shared read lock ok OBJETO 
+2022-06-01 23:16:04 jdbc[3]: 
 /*SQL #:1*/INSERT INTO objeto (longitud, latitud,nombre) VALUES('2.5392273491','3.5559444444','Insertado desde datos.sql');
-2022-05-30 22:48:34 lock: 3 shared read lock unlock OBJETO 
-2022-05-30 22:48:34 jdbc[3]: 
+2022-06-01 23:16:04 lock: 3 shared read lock unlock OBJETO 
+2022-06-01 23:16:04 jdbc[3]: 
 /**/prep53.close();
-2022-05-30 22:48:34 jdbc[3]: 
+2022-06-01 23:16:04 jdbc[3]: 
 /**/conn0.setClientInfo(properties);
-2022-05-30 22:48:34 jdbc[3]: 
+2022-06-01 23:16:04 jdbc[3]: 
 /**/conn0.getClientInfo();
-2022-05-30 22:48:34 jdbc[3]: 
+2022-06-01 23:16:04 jdbc[3]: 
 /**/PreparedStatement prep54 = conn0.prepareStatement("INSERT INTO objeto (longitud, latitud,nombre) VALUES('3.1234987654','1.0873023588','Insertado desde datos.sql');", 1003, 1007);
-2022-05-30 22:48:34 jdbc[3]: 
+2022-06-01 23:16:04 jdbc[3]: 
 /**/prep54.executeUpdate();
-2022-05-30 22:48:34 lock: 3 shared read lock requesting for OBJETO 
-2022-05-30 22:48:34 lock: 3 shared read lock ok OBJETO 
-2022-05-30 22:48:34 jdbc[3]: 
+2022-06-01 23:16:04 lock: 3 shared read lock requesting for OBJETO 
+2022-06-01 23:16:04 lock: 3 shared read lock ok OBJETO 
+2022-06-01 23:16:04 jdbc[3]: 
 /*SQL #:1*/INSERT INTO objeto (longitud, latitud,nombre) VALUES('3.1234987654','1.0873023588','Insertado desde datos.sql');
-2022-05-30 22:48:34 lock: 3 shared read lock unlock OBJETO 
-2022-05-30 22:48:34 jdbc[3]: 
+2022-06-01 23:16:04 lock: 3 shared read lock unlock OBJETO 
+2022-06-01 23:16:04 jdbc[3]: 
 /**/prep54.close();
-2022-05-30 22:48:34 jdbc[3]: 
+2022-06-01 23:16:04 jdbc[3]: 
 /**/conn0.setClientInfo(properties);
-2022-05-30 22:48:34 jdbc[3]: 
+2022-06-01 23:16:04 jdbc[3]: 
 /**/conn0.getClientInfo();
-2022-05-30 22:48:34 jdbc[3]: 
+2022-06-01 23:16:04 jdbc[3]: 
 /**/PreparedStatement prep55 = conn0.prepareStatement("INSERT INTO objeto_estado(actual,fecha_alcanzado) VALUES(true,'2022-05-02');", 1003, 1007);
-2022-05-30 22:48:34 jdbc[3]: 
+2022-06-01 23:16:04 jdbc[3]: 
 /**/prep55.executeUpdate();
-2022-05-30 22:48:34 lock: 3 shared read lock requesting for OBJETO_ESTADO 
-2022-05-30 22:48:34 lock: 3 shared read lock ok OBJETO_ESTADO 
-2022-05-30 22:48:34 jdbc[3]: 
+2022-06-01 23:16:04 lock: 3 shared read lock requesting for OBJETO_ESTADO 
+2022-06-01 23:16:04 lock: 3 shared read lock ok OBJETO_ESTADO 
+2022-06-01 23:16:04 jdbc[3]: 
 /*SQL #:1*/INSERT INTO objeto_estado(actual,fecha_alcanzado) VALUES(true,'2022-05-02');
-2022-05-30 22:48:34 lock: 3 shared read lock unlock OBJETO_ESTADO 
-2022-05-30 22:48:34 jdbc[3]: 
+2022-06-01 23:16:04 lock: 3 shared read lock unlock OBJETO_ESTADO 
+2022-06-01 23:16:04 jdbc[3]: 
 /**/prep55.close();
-2022-05-30 22:48:34 jdbc[3]: 
+2022-06-01 23:16:04 jdbc[3]: 
 /**/conn0.setClientInfo(properties);
-2022-05-30 22:48:34 jdbc[3]: 
+2022-06-01 23:16:04 jdbc[3]: 
 /**/conn0.getClientInfo();
-2022-05-30 22:48:34 jdbc[3]: 
+2022-06-01 23:16:04 jdbc[3]: 
 /**/PreparedStatement prep56 = conn0.prepareStatement("INSERT INTO objeto_estado(actual,fecha_alcanzado) VALUES(false,'2022-05-02');", 1003, 1007);
-2022-05-30 22:48:34 jdbc[3]: 
+2022-06-01 23:16:04 jdbc[3]: 
 /**/prep56.executeUpdate();
-2022-05-30 22:48:34 lock: 3 shared read lock requesting for OBJETO_ESTADO 
-2022-05-30 22:48:34 lock: 3 shared read lock ok OBJETO_ESTADO 
-2022-05-30 22:48:34 jdbc[3]: 
+2022-06-01 23:16:04 lock: 3 shared read lock requesting for OBJETO_ESTADO 
+2022-06-01 23:16:04 lock: 3 shared read lock ok OBJETO_ESTADO 
+2022-06-01 23:16:04 jdbc[3]: 
 /*SQL #:1*/INSERT INTO objeto_estado(actual,fecha_alcanzado) VALUES(false,'2022-05-02');
-2022-05-30 22:48:34 lock: 3 shared read lock unlock OBJETO_ESTADO 
-2022-05-30 22:48:34 jdbc[3]: 
+2022-06-01 23:16:04 lock: 3 shared read lock unlock OBJETO_ESTADO 
+2022-06-01 23:16:04 jdbc[3]: 
 /**/prep56.close();
-2022-05-30 22:48:34 jdbc[3]: 
+2022-06-01 23:16:04 jdbc[3]: 
 /**/conn0.setClientInfo(properties);
-2022-05-30 22:48:34 jdbc[3]: 
+2022-06-01 23:16:04 jdbc[3]: 
 /**/conn0.getClientInfo();
-2022-05-30 22:48:34 jdbc[3]: 
+2022-06-01 23:16:04 jdbc[3]: 
 /**/PreparedStatement prep57 = conn0.prepareStatement("INSERT INTO objeto_estado(actual,fecha_alcanzado) VALUES(true,'2022-05-02');", 1003, 1007);
-2022-05-30 22:48:34 jdbc[3]: 
+2022-06-01 23:16:04 jdbc[3]: 
 /**/prep57.executeUpdate();
-2022-05-30 22:48:34 lock: 3 shared read lock requesting for OBJETO_ESTADO 
-2022-05-30 22:48:34 lock: 3 shared read lock ok OBJETO_ESTADO 
-2022-05-30 22:48:34 jdbc[3]: 
+2022-06-01 23:16:04 lock: 3 shared read lock requesting for OBJETO_ESTADO 
+2022-06-01 23:16:04 lock: 3 shared read lock ok OBJETO_ESTADO 
+2022-06-01 23:16:04 jdbc[3]: 
 /*SQL #:1*/INSERT INTO objeto_estado(actual,fecha_alcanzado) VALUES(true,'2022-05-02');
-2022-05-30 22:48:34 lock: 3 shared read lock unlock OBJETO_ESTADO 
-2022-05-30 22:48:34 jdbc[3]: 
+2022-06-01 23:16:04 lock: 3 shared read lock unlock OBJETO_ESTADO 
+2022-06-01 23:16:04 jdbc[3]: 
 /**/prep57.close();
-2022-05-30 22:48:34 jdbc[3]: 
+2022-06-01 23:16:04 jdbc[3]: 
 /**/conn0.setClientInfo(properties);
-2022-05-30 22:48:34 jdbc[3]: 
+2022-06-01 23:16:04 jdbc[3]: 
 /**/conn0.getClientInfo();
-2022-05-30 22:48:34 jdbc[3]: 
+2022-06-01 23:16:04 jdbc[3]: 
 /**/PreparedStatement prep58 = conn0.prepareStatement("INSERT INTO ruta(nombre,fecha_creacion) VALUES('Insertado desde datos.sql','2022-05-03');", 1003, 1007);
-2022-05-30 22:48:34 jdbc[3]: 
+2022-06-01 23:16:04 jdbc[3]: 
 /**/prep58.executeUpdate();
-2022-05-30 22:48:34 lock: 3 shared read lock requesting for RUTA 
-2022-05-30 22:48:34 lock: 3 shared read lock ok RUTA 
-2022-05-30 22:48:34 jdbc[3]: 
+2022-06-01 23:16:04 lock: 3 shared read lock requesting for RUTA 
+2022-06-01 23:16:04 lock: 3 shared read lock ok RUTA 
+2022-06-01 23:16:04 jdbc[3]: 
 /*SQL #:1*/INSERT INTO ruta(nombre,fecha_creacion) VALUES('Insertado desde datos.sql','2022-05-03');
-2022-05-30 22:48:34 lock: 3 shared read lock unlock RUTA 
-2022-05-30 22:48:34 jdbc[3]: 
+2022-06-01 23:16:04 lock: 3 shared read lock unlock RUTA 
+2022-06-01 23:16:04 jdbc[3]: 
 /**/prep58.close();
-2022-05-30 22:48:34 jdbc[3]: 
+2022-06-01 23:16:04 jdbc[3]: 
 /**/conn0.setClientInfo(properties);
-2022-05-30 22:48:34 jdbc[3]: 
+2022-06-01 23:16:04 jdbc[3]: 
 /**/conn0.getClientInfo();
-2022-05-30 22:48:34 jdbc[3]: 
+2022-06-01 23:16:04 jdbc[3]: 
 /**/PreparedStatement prep59 = conn0.prepareStatement("INSERT INTO ruta(nombre,fecha_creacion) VALUES('Insertado desde datos.sql','2022-05-03');", 1003, 1007);
-2022-05-30 22:48:34 jdbc[3]: 
+2022-06-01 23:16:04 jdbc[3]: 
 /**/prep59.executeUpdate();
-2022-05-30 22:48:34 lock: 3 shared read lock requesting for RUTA 
-2022-05-30 22:48:34 lock: 3 shared read lock ok RUTA 
-2022-05-30 22:48:34 jdbc[3]: 
+2022-06-01 23:16:04 lock: 3 shared read lock requesting for RUTA 
+2022-06-01 23:16:04 lock: 3 shared read lock ok RUTA 
+2022-06-01 23:16:04 jdbc[3]: 
 /*SQL #:1*/INSERT INTO ruta(nombre,fecha_creacion) VALUES('Insertado desde datos.sql','2022-05-03');
-2022-05-30 22:48:34 lock: 3 shared read lock unlock RUTA 
-2022-05-30 22:48:34 jdbc[3]: 
+2022-06-01 23:16:04 lock: 3 shared read lock unlock RUTA 
+2022-06-01 23:16:04 jdbc[3]: 
 /**/prep59.close();
-2022-05-30 22:48:34 jdbc[3]: 
+2022-06-01 23:16:04 jdbc[3]: 
 /**/conn0.setClientInfo(properties);
-2022-05-30 22:48:34 jdbc[3]: 
+2022-06-01 23:16:04 jdbc[3]: 
 /**/conn0.getClientInfo();
-2022-05-30 22:48:34 jdbc[3]: 
+2022-06-01 23:16:04 jdbc[3]: 
 /**/PreparedStatement prep60 = conn0.prepareStatement("INSERT INTO ruta(nombre,fecha_creacion) VALUES('Insertado desde datos.sql','2022-05-03');", 1003, 1007);
-2022-05-30 22:48:34 jdbc[3]: 
+2022-06-01 23:16:04 jdbc[3]: 
 /**/prep60.executeUpdate();
-2022-05-30 22:48:34 lock: 3 shared read lock requesting for RUTA 
-2022-05-30 22:48:34 lock: 3 shared read lock ok RUTA 
-2022-05-30 22:48:34 jdbc[3]: 
+2022-06-01 23:16:04 lock: 3 shared read lock requesting for RUTA 
+2022-06-01 23:16:04 lock: 3 shared read lock ok RUTA 
+2022-06-01 23:16:04 jdbc[3]: 
 /*SQL #:1*/INSERT INTO ruta(nombre,fecha_creacion) VALUES('Insertado desde datos.sql','2022-05-03');
-2022-05-30 22:48:34 lock: 3 shared read lock unlock RUTA 
-2022-05-30 22:48:34 jdbc[3]: 
+2022-06-01 23:16:04 lock: 3 shared read lock unlock RUTA 
+2022-06-01 23:16:04 jdbc[3]: 
 /**/prep60.close();
-2022-05-30 22:48:34 jdbc[3]: 
+2022-06-01 23:16:04 jdbc[3]: 
 /**/conn0.setClientInfo(properties);
-2022-05-30 22:48:34 jdbc[3]: 
+2022-06-01 23:16:04 jdbc[3]: 
 /**/conn0.getClientInfo();
-2022-05-30 22:48:34 jdbc[3]: 
+2022-06-01 23:16:04 jdbc[3]: 
 /**/PreparedStatement prep61 = conn0.prepareStatement("INSERT INTO tipo_objeto (activo,fecha_creacion) VALUES (true,'2022-3-21');", 1003, 1007);
-2022-05-30 22:48:34 jdbc[3]: 
+2022-06-01 23:16:04 jdbc[3]: 
 /**/prep61.executeUpdate();
-2022-05-30 22:48:34 lock: 3 shared read lock requesting for TIPO_OBJETO 
-2022-05-30 22:48:34 lock: 3 shared read lock ok TIPO_OBJETO 
-2022-05-30 22:48:34 jdbc[3]: 
+2022-06-01 23:16:04 lock: 3 shared read lock requesting for TIPO_OBJETO 
+2022-06-01 23:16:04 lock: 3 shared read lock ok TIPO_OBJETO 
+2022-06-01 23:16:04 jdbc[3]: 
 /*SQL #:1*/INSERT INTO tipo_objeto (activo,fecha_creacion) VALUES (true,'2022-3-21');
-2022-05-30 22:48:34 lock: 3 shared read lock unlock TIPO_OBJETO 
-2022-05-30 22:48:34 jdbc[3]: 
+2022-06-01 23:16:04 lock: 3 shared read lock unlock TIPO_OBJETO 
+2022-06-01 23:16:04 jdbc[3]: 
 /**/prep61.close();
-2022-05-30 22:48:34 jdbc[3]: 
+2022-06-01 23:16:04 jdbc[3]: 
 /**/conn0.setClientInfo(properties);
-2022-05-30 22:48:34 jdbc[3]: 
+2022-06-01 23:16:04 jdbc[3]: 
 /**/conn0.getClientInfo();
-2022-05-30 22:48:34 jdbc[3]: 
+2022-06-01 23:16:04 jdbc[3]: 
 /**/PreparedStatement prep62 = conn0.prepareStatement("INSERT INTO tipo_objeto (activo,fecha_creacion) VALUES (true,'2022-3-22');", 1003, 1007);
-2022-05-30 22:48:34 jdbc[3]: 
+2022-06-01 23:16:04 jdbc[3]: 
 /**/prep62.executeUpdate();
-2022-05-30 22:48:34 lock: 3 shared read lock requesting for TIPO_OBJETO 
-2022-05-30 22:48:34 lock: 3 shared read lock ok TIPO_OBJETO 
-2022-05-30 22:48:34 jdbc[3]: 
+2022-06-01 23:16:04 lock: 3 shared read lock requesting for TIPO_OBJETO 
+2022-06-01 23:16:04 lock: 3 shared read lock ok TIPO_OBJETO 
+2022-06-01 23:16:04 jdbc[3]: 
 /*SQL #:1*/INSERT INTO tipo_objeto (activo,fecha_creacion) VALUES (true,'2022-3-22');
-2022-05-30 22:48:34 lock: 3 shared read lock unlock TIPO_OBJETO 
-2022-05-30 22:48:34 jdbc[3]: 
+2022-06-01 23:16:04 lock: 3 shared read lock unlock TIPO_OBJETO 
+2022-06-01 23:16:04 jdbc[3]: 
 /**/prep62.close();
-2022-05-30 22:48:34 jdbc[3]: 
+2022-06-01 23:16:04 jdbc[3]: 
 /**/conn0.setClientInfo(properties);
-2022-05-30 22:48:34 jdbc[3]: 
+2022-06-01 23:16:04 jdbc[3]: 
 /**/conn0.getClientInfo();
-2022-05-30 22:48:34 jdbc[3]: 
+2022-06-01 23:16:04 jdbc[3]: 
 /**/PreparedStatement prep63 = conn0.prepareStatement("INSERT INTO tipo_objeto (activo,fecha_creacion) VALUES (true,'2022-3-23');", 1003, 1007);
-2022-05-30 22:48:34 jdbc[3]: 
+2022-06-01 23:16:04 jdbc[3]: 
 /**/prep63.executeUpdate();
-2022-05-30 22:48:34 lock: 3 shared read lock requesting for TIPO_OBJETO 
-2022-05-30 22:48:34 lock: 3 shared read lock ok TIPO_OBJETO 
-2022-05-30 22:48:34 jdbc[3]: 
+2022-06-01 23:16:04 lock: 3 shared read lock requesting for TIPO_OBJETO 
+2022-06-01 23:16:04 lock: 3 shared read lock ok TIPO_OBJETO 
+2022-06-01 23:16:04 jdbc[3]: 
 /*SQL #:1*/INSERT INTO tipo_objeto (activo,fecha_creacion) VALUES (true,'2022-3-23');
-2022-05-30 22:48:34 lock: 3 shared read lock unlock TIPO_OBJETO 
-2022-05-30 22:48:34 jdbc[3]: 
+2022-06-01 23:16:04 lock: 3 shared read lock unlock TIPO_OBJETO 
+2022-06-01 23:16:04 jdbc[3]: 
 /**/prep63.close();
-2022-05-30 22:48:34 jdbc[3]: 
+2022-06-01 23:16:04 jdbc[3]: 
 /**/conn0.setClientInfo(properties);
 
 
 *************************************************************
 findAllObjetoEstado
-2022-05-30 22:48:35 jdbc[3]: 
+2022-06-01 23:16:05 jdbc[3]: 
 /**/conn0.getClientInfo();
-2022-05-30 22:48:35 jdbc[3]: 
+2022-06-01 23:16:05 jdbc[3]: 
 /**/PreparedStatement prep64 = conn0.prepareStatement("SELECT id_objeto_estado, actual, fecha_alcanzado, observaciones, id_estado, id_objeto FROM public.objeto_estado", 1003, 1007);
-2022-05-30 22:48:35 jdbc[3]: Plan       : calculate cost for plan [PUBLIC.OBJETO_ESTADO]
-2022-05-30 22:48:35 jdbc[3]: Plan       :   for table filter PUBLIC.OBJETO_ESTADO
-2022-05-30 22:48:35 jdbc[3]: Table      :     potential plan item cost 10,260 index PUBLIC.OBJETO_ESTADO.tableScan
-2022-05-30 22:48:35 jdbc[3]: Table      :     potential plan item cost 10,270 index PUBLIC.PRIMARY_KEY_4
-2022-05-30 22:48:35 jdbc[3]: Table      :     potential plan item cost 20,340 index PUBLIC.FK_OBJETO_ESTADO_ID_OBJETO_INDEX_4
-2022-05-30 22:48:35 jdbc[3]: Table      :     potential plan item cost 20,340 index PUBLIC.FK_OBJETO_ESTADO_ID_ESTADO_INDEX_4
-2022-05-30 22:48:35 jdbc[3]: Plan       :   best plan item cost 10,260 index PUBLIC.OBJETO_ESTADO.tableScan
-2022-05-30 22:48:35 jdbc[3]: Plan       : plan cost 10,261
-2022-05-30 22:48:35 jdbc[3]: 
+2022-06-01 23:16:05 jdbc[3]: Plan       : calculate cost for plan [PUBLIC.OBJETO_ESTADO]
+2022-06-01 23:16:05 jdbc[3]: Plan       :   for table filter PUBLIC.OBJETO_ESTADO
+2022-06-01 23:16:05 jdbc[3]: Table      :     potential plan item cost 10,260 index PUBLIC.OBJETO_ESTADO.tableScan
+2022-06-01 23:16:05 jdbc[3]: Table      :     potential plan item cost 10,270 index PUBLIC.PRIMARY_KEY_4
+2022-06-01 23:16:05 jdbc[3]: Table      :     potential plan item cost 20,340 index PUBLIC.FK_OBJETO_ESTADO_ID_OBJETO_INDEX_4
+2022-06-01 23:16:05 jdbc[3]: Table      :     potential plan item cost 20,340 index PUBLIC.FK_OBJETO_ESTADO_ID_ESTADO_INDEX_4
+2022-06-01 23:16:05 jdbc[3]: Plan       :   best plan item cost 10,260 index PUBLIC.OBJETO_ESTADO.tableScan
+2022-06-01 23:16:05 jdbc[3]: Plan       : plan cost 10,261
+2022-06-01 23:16:05 jdbc[3]: 
 /**/ResultSet rs19 = prep64.executeQuery();
-2022-05-30 22:48:35 jdbc[3]: 
+2022-06-01 23:16:05 jdbc[3]: 
 /*SQL #:6*/SELECT id_objeto_estado, actual, fecha_alcanzado, observaciones, id_estado, id_objeto FROM public.objeto_estado;
-2022-05-30 22:48:35 jdbc[3]: 
+2022-06-01 23:16:05 jdbc[3]: 
 /**/ResultSetMetaData rsMeta19 = rs19.getMetaData();
-2022-05-30 22:48:35 jdbc[3]: 
+2022-06-01 23:16:05 jdbc[3]: 
 /**/conn0.getCatalog();
-2022-05-30 22:48:35 jdbc[3]: 
+2022-06-01 23:16:05 jdbc[3]: 
 /**/rsMeta19.getColumnCount();
-2022-05-30 22:48:35 jdbc[3]: 
+2022-06-01 23:16:05 jdbc[3]: 
 /**/rs19.next();
-2022-05-30 22:48:35 jdbc[3]: 
+2022-06-01 23:16:05 jdbc[3]: 
 /**/rsMeta19.getColumnType(1);
-2022-05-30 22:48:35 jdbc[3]: 
+2022-06-01 23:16:05 jdbc[3]: 
 /**/rs19.getLong(1);
-2022-05-30 22:48:35 jdbc[3]: 
+2022-06-01 23:16:05 jdbc[3]: 
 /**/rsMeta19.getColumnType(2);
-2022-05-30 22:48:35 jdbc[3]: 
+2022-06-01 23:16:05 jdbc[3]: 
 /**/rs19.getBoolean(2);
-2022-05-30 22:48:35 jdbc[3]: 
+2022-06-01 23:16:05 jdbc[3]: 
 /**/rsMeta19.getColumnType(3);
-2022-05-30 22:48:35 jdbc[3]: 
+2022-06-01 23:16:05 jdbc[3]: 
 /**/rs19.getDate(3);
-2022-05-30 22:48:35 jdbc[3]: 
+2022-06-01 23:16:05 jdbc[3]: 
 /**/rsMeta19.getColumnType(4);
-2022-05-30 22:48:35 jdbc[3]: 
+2022-06-01 23:16:05 jdbc[3]: 
 /**/rs19.getString(4);
-2022-05-30 22:48:35 jdbc[3]: 
+2022-06-01 23:16:05 jdbc[3]: 
 /**/rsMeta19.getColumnType(5);
-2022-05-30 22:48:35 jdbc[3]: 
+2022-06-01 23:16:05 jdbc[3]: 
 /**/rs19.getInt(5);
-2022-05-30 22:48:35 jdbc[3]: 
+2022-06-01 23:16:05 jdbc[3]: 
 /**/rs19.wasNull();
-2022-05-30 22:48:35 jdbc[3]: 
+2022-06-01 23:16:05 jdbc[3]: 
 /**/rsMeta19.getColumnType(6);
-2022-05-30 22:48:35 jdbc[3]: 
+2022-06-01 23:16:05 jdbc[3]: 
 /**/rs19.getLong(6);
-2022-05-30 22:48:35 jdbc[3]: 
+2022-06-01 23:16:05 jdbc[3]: 
 /**/rs19.wasNull();
-2022-05-30 22:48:35 jdbc[3]: 
+2022-06-01 23:16:05 jdbc[3]: 
 /**/rs19.next();
-2022-05-30 22:48:35 jdbc[3]: 
+2022-06-01 23:16:05 jdbc[3]: 
 /**/rs19.getLong(1);
-2022-05-30 22:48:35 jdbc[3]: 
+2022-06-01 23:16:05 jdbc[3]: 
 /**/rs19.getBoolean(2);
-2022-05-30 22:48:35 jdbc[3]: 
+2022-06-01 23:16:05 jdbc[3]: 
 /**/rs19.wasNull();
-2022-05-30 22:48:35 jdbc[3]: 
+2022-06-01 23:16:05 jdbc[3]: 
 /**/rs19.getDate(3);
-2022-05-30 22:48:35 jdbc[3]: 
+2022-06-01 23:16:05 jdbc[3]: 
 /**/rs19.getString(4);
-2022-05-30 22:48:35 jdbc[3]: 
+2022-06-01 23:16:05 jdbc[3]: 
 /**/rs19.getInt(5);
-2022-05-30 22:48:35 jdbc[3]: 
+2022-06-01 23:16:05 jdbc[3]: 
 /**/rs19.wasNull();
-2022-05-30 22:48:35 jdbc[3]: 
+2022-06-01 23:16:05 jdbc[3]: 
 /**/rs19.getLong(6);
-2022-05-30 22:48:35 jdbc[3]: 
+2022-06-01 23:16:05 jdbc[3]: 
 /**/rs19.wasNull();
-2022-05-30 22:48:35 jdbc[3]: 
+2022-06-01 23:16:05 jdbc[3]: 
 /**/rs19.next();
-2022-05-30 22:48:35 jdbc[3]: 
+2022-06-01 23:16:05 jdbc[3]: 
 /**/rs19.getLong(1);
-2022-05-30 22:48:35 jdbc[3]: 
+2022-06-01 23:16:05 jdbc[3]: 
 /**/rs19.getBoolean(2);
-2022-05-30 22:48:35 jdbc[3]: 
+2022-06-01 23:16:05 jdbc[3]: 
 /**/rs19.getDate(3);
-2022-05-30 22:48:35 jdbc[3]: 
+2022-06-01 23:16:05 jdbc[3]: 
 /**/rs19.getString(4);
-2022-05-30 22:48:35 jdbc[3]: 
+2022-06-01 23:16:05 jdbc[3]: 
 /**/rs19.getInt(5);
-2022-05-30 22:48:35 jdbc[3]: 
+2022-06-01 23:16:05 jdbc[3]: 
 /**/rs19.wasNull();
-2022-05-30 22:48:35 jdbc[3]: 
+2022-06-01 23:16:05 jdbc[3]: 
 /**/rs19.getLong(6);
-2022-05-30 22:48:35 jdbc[3]: 
+2022-06-01 23:16:05 jdbc[3]: 
 /**/rs19.wasNull();
-2022-05-30 22:48:35 jdbc[3]: 
+2022-06-01 23:16:05 jdbc[3]: 
 /**/rs19.next();
-2022-05-30 22:48:35 jdbc[3]: 
+2022-06-01 23:16:05 jdbc[3]: 
 /**/rs19.getLong(1);
-2022-05-30 22:48:35 jdbc[3]: 
+2022-06-01 23:16:05 jdbc[3]: 
 /**/rs19.getBoolean(2);
-2022-05-30 22:48:35 jdbc[3]: 
+2022-06-01 23:16:05 jdbc[3]: 
 /**/rs19.getDate(3);
-2022-05-30 22:48:35 jdbc[3]: 
+2022-06-01 23:16:05 jdbc[3]: 
 /**/rs19.getString(4);
-2022-05-30 22:48:35 jdbc[3]: 
+2022-06-01 23:16:05 jdbc[3]: 
 /**/rs19.getInt(5);
-2022-05-30 22:48:35 jdbc[3]: 
+2022-06-01 23:16:05 jdbc[3]: 
 /**/rs19.wasNull();
-2022-05-30 22:48:35 jdbc[3]: 
+2022-06-01 23:16:05 jdbc[3]: 
 /**/rs19.getLong(6);
-2022-05-30 22:48:35 jdbc[3]: 
+2022-06-01 23:16:05 jdbc[3]: 
 /**/rs19.wasNull();
-2022-05-30 22:48:35 jdbc[3]: 
+2022-06-01 23:16:05 jdbc[3]: 
 /**/rs19.next();
-2022-05-30 22:48:35 jdbc[3]: 
+2022-06-01 23:16:05 jdbc[3]: 
 /**/rs19.getLong(1);
-2022-05-30 22:48:35 jdbc[3]: 
+2022-06-01 23:16:05 jdbc[3]: 
 /**/rs19.getBoolean(2);
-2022-05-30 22:48:35 jdbc[3]: 
+2022-06-01 23:16:05 jdbc[3]: 
 /**/rs19.wasNull();
-2022-05-30 22:48:35 jdbc[3]: 
+2022-06-01 23:16:05 jdbc[3]: 
 /**/rs19.getDate(3);
-2022-05-30 22:48:35 jdbc[3]: 
+2022-06-01 23:16:05 jdbc[3]: 
 /**/rs19.getString(4);
-2022-05-30 22:48:35 jdbc[3]: 
+2022-06-01 23:16:05 jdbc[3]: 
 /**/rs19.getInt(5);
-2022-05-30 22:48:35 jdbc[3]: 
+2022-06-01 23:16:05 jdbc[3]: 
 /**/rs19.wasNull();
-2022-05-30 22:48:35 jdbc[3]: 
+2022-06-01 23:16:05 jdbc[3]: 
 /**/rs19.getLong(6);
-2022-05-30 22:48:35 jdbc[3]: 
+2022-06-01 23:16:05 jdbc[3]: 
 /**/rs19.wasNull();
-2022-05-30 22:48:35 jdbc[3]: 
+2022-06-01 23:16:05 jdbc[3]: 
 /**/rs19.next();
-2022-05-30 22:48:35 jdbc[3]: 
+2022-06-01 23:16:05 jdbc[3]: 
 /**/rs19.getLong(1);
-2022-05-30 22:48:35 jdbc[3]: 
+2022-06-01 23:16:05 jdbc[3]: 
 /**/rs19.getBoolean(2);
-2022-05-30 22:48:35 jdbc[3]: 
+2022-06-01 23:16:05 jdbc[3]: 
 /**/rs19.getDate(3);
-2022-05-30 22:48:35 jdbc[3]: 
+2022-06-01 23:16:05 jdbc[3]: 
 /**/rs19.getString(4);
-2022-05-30 22:48:35 jdbc[3]: 
+2022-06-01 23:16:05 jdbc[3]: 
 /**/rs19.getInt(5);
-2022-05-30 22:48:35 jdbc[3]: 
+2022-06-01 23:16:05 jdbc[3]: 
 /**/rs19.wasNull();
-2022-05-30 22:48:35 jdbc[3]: 
+2022-06-01 23:16:05 jdbc[3]: 
 /**/rs19.getLong(6);
-2022-05-30 22:48:35 jdbc[3]: 
+2022-06-01 23:16:05 jdbc[3]: 
 /**/rs19.wasNull();
-2022-05-30 22:48:35 jdbc[3]: 
+2022-06-01 23:16:05 jdbc[3]: 
 /**/rs19.next();
-2022-05-30 22:48:35 jdbc[3]: 
+2022-06-01 23:16:05 jdbc[3]: 
 /**/rs19.close();
-2022-05-30 22:48:35 jdbc[3]: 
+2022-06-01 23:16:05 jdbc[3]: 
 /**/prep64.close();
-2022-05-30 22:48:35 jdbc[3]: 
+2022-06-01 23:16:05 jdbc[3]: 
 /**/conn0.setClientInfo(properties);
-2022-05-30 22:48:35 jdbc[3]: 
+2022-06-01 23:16:05 jdbc[3]: 
 /**/conn0.getClientInfo();
-2022-05-30 22:48:35 jdbc[3]: 
+2022-06-01 23:16:05 jdbc[3]: 
 /**/PreparedStatement prep65 = conn0.prepareStatement("SELECT COUNT(id_objeto_estado) FROM public.objeto_estado", 1003, 1007);
-2022-05-30 22:48:35 jdbc[3]: Plan       : calculate cost for plan [PUBLIC.OBJETO_ESTADO]
-2022-05-30 22:48:35 jdbc[3]: Plan       :   for table filter PUBLIC.OBJETO_ESTADO
-2022-05-30 22:48:35 jdbc[3]: Table      :     potential plan item cost 10,260 index PUBLIC.OBJETO_ESTADO.tableScan
-2022-05-30 22:48:35 jdbc[3]: Table      :     potential plan item cost 10,270 index PUBLIC.PRIMARY_KEY_4
-2022-05-30 22:48:35 jdbc[3]: Table      :     potential plan item cost 20,340 index PUBLIC.FK_OBJETO_ESTADO_ID_OBJETO_INDEX_4
-2022-05-30 22:48:35 jdbc[3]: Table      :     potential plan item cost 20,340 index PUBLIC.FK_OBJETO_ESTADO_ID_ESTADO_INDEX_4
-2022-05-30 22:48:35 jdbc[3]: Plan       :   best plan item cost 10,260 index PUBLIC.OBJETO_ESTADO.tableScan
-2022-05-30 22:48:35 jdbc[3]: Plan       : plan cost 10,261
-2022-05-30 22:48:35 jdbc[3]: 
+2022-06-01 23:16:05 jdbc[3]: Plan       : calculate cost for plan [PUBLIC.OBJETO_ESTADO]
+2022-06-01 23:16:05 jdbc[3]: Plan       :   for table filter PUBLIC.OBJETO_ESTADO
+2022-06-01 23:16:05 jdbc[3]: Table      :     potential plan item cost 10,260 index PUBLIC.OBJETO_ESTADO.tableScan
+2022-06-01 23:16:05 jdbc[3]: Table      :     potential plan item cost 10,270 index PUBLIC.PRIMARY_KEY_4
+2022-06-01 23:16:05 jdbc[3]: Table      :     potential plan item cost 20,340 index PUBLIC.FK_OBJETO_ESTADO_ID_OBJETO_INDEX_4
+2022-06-01 23:16:05 jdbc[3]: Table      :     potential plan item cost 20,340 index PUBLIC.FK_OBJETO_ESTADO_ID_ESTADO_INDEX_4
+2022-06-01 23:16:05 jdbc[3]: Plan       :   best plan item cost 10,260 index PUBLIC.OBJETO_ESTADO.tableScan
+2022-06-01 23:16:05 jdbc[3]: Plan       : plan cost 10,261
+2022-06-01 23:16:05 jdbc[3]: 
 /**/ResultSet rs20 = prep65.executeQuery();
-2022-05-30 22:48:35 jdbc[3]: 
+2022-06-01 23:16:05 jdbc[3]: 
 /*SQL #:1*/SELECT COUNT(id_objeto_estado) FROM public.objeto_estado;
-2022-05-30 22:48:35 jdbc[3]: 
+2022-06-01 23:16:05 jdbc[3]: 
 /**/ResultSetMetaData rsMeta20 = rs20.getMetaData();
-2022-05-30 22:48:35 jdbc[3]: 
+2022-06-01 23:16:05 jdbc[3]: 
 /**/conn0.getCatalog();
-2022-05-30 22:48:35 jdbc[3]: 
+2022-06-01 23:16:05 jdbc[3]: 
 /**/rsMeta20.getColumnCount();
-2022-05-30 22:48:35 jdbc[3]: 
+2022-06-01 23:16:05 jdbc[3]: 
 /**/rs20.next();
-2022-05-30 22:48:35 jdbc[3]: 
+2022-06-01 23:16:05 jdbc[3]: 
 /**/rsMeta20.getColumnType(1);
-2022-05-30 22:48:35 jdbc[3]: 
+2022-06-01 23:16:05 jdbc[3]: 
 /**/rs20.getLong(1);
-2022-05-30 22:48:35 jdbc[3]: 
+2022-06-01 23:16:05 jdbc[3]: 
 /**/rs20.next();
-2022-05-30 22:48:35 jdbc[3]: 
+2022-06-01 23:16:05 jdbc[3]: 
 /**/rs20.close();
-2022-05-30 22:48:35 jdbc[3]: 
+2022-06-01 23:16:05 jdbc[3]: 
 /**/prep65.close();
-2022-05-30 22:48:35 jdbc[3]: 
+2022-06-01 23:16:05 jdbc[3]: 
 /**/conn0.setClientInfo(properties);
 Total: 6
 
@@ -890,33 +890,33 @@ ID: 6
 
 
 ]]></system-out>
-    <system-err><![CDATA[may. 30, 2022 10:48:34 P. M. org.glassfish.hk2.classmodel.reflect.Parser awaitTermination
+    <system-err><![CDATA[jun. 01, 2022 11:16:04 P. M. org.glassfish.hk2.classmodel.reflect.Parser awaitTermination
 INFORMACIÓN: visiting unvisited references
-may. 30, 2022 10:48:34 P. M. org.glassfish.hk2.classmodel.reflect.Parser awaitTermination
+jun. 01, 2022 11:16:04 P. M. org.glassfish.hk2.classmodel.reflect.Parser awaitTermination
 INFORMACIÓN: visiting unvisited references
-may. 30, 2022 10:48:34 P. M. org.glassfish.hk2.classmodel.reflect.Parser awaitTermination
+jun. 01, 2022 11:16:04 P. M. org.glassfish.hk2.classmodel.reflect.Parser awaitTermination
 INFORMACIÓN: visiting unvisited references
-may. 30, 2022 10:48:34 P. M. org.glassfish.hk2.classmodel.reflect.Parser awaitTermination
+jun. 01, 2022 11:16:04 P. M. org.glassfish.hk2.classmodel.reflect.Parser awaitTermination
 INFORMACIÓN: visiting unvisited references
-may. 30, 2022 10:48:34 P. M. org.glassfish.hk2.classmodel.reflect.Parser awaitTermination
+jun. 01, 2022 11:16:04 P. M. org.glassfish.hk2.classmodel.reflect.Parser awaitTermination
 INFORMACIÓN: visiting unvisited references
-may. 30, 2022 10:48:34 P. M. org.glassfish.hk2.classmodel.reflect.Parser awaitTermination
+jun. 01, 2022 11:16:04 P. M. org.glassfish.hk2.classmodel.reflect.Parser awaitTermination
 INFORMACIÓN: visiting unvisited references
-may. 30, 2022 10:48:34 P. M. org.glassfish.hk2.classmodel.reflect.Parser awaitTermination
+jun. 01, 2022 11:16:04 P. M. org.glassfish.hk2.classmodel.reflect.Parser awaitTermination
 INFORMACIÓN: visiting unvisited references
-may. 30, 2022 10:48:34 P. M. org.glassfish.hk2.classmodel.reflect.Parser awaitTermination
+jun. 01, 2022 11:16:04 P. M. org.glassfish.hk2.classmodel.reflect.Parser awaitTermination
 INFORMACIÓN: visiting unvisited references
-may. 30, 2022 10:48:34 P. M. org.glassfish.hk2.classmodel.reflect.Parser awaitTermination
+jun. 01, 2022 11:16:04 P. M. org.glassfish.hk2.classmodel.reflect.Parser awaitTermination
 INFORMACIÓN: visiting unvisited references
-may. 30, 2022 10:48:34 P. M. org.glassfish.hk2.classmodel.reflect.Parser awaitTermination
+jun. 01, 2022 11:16:04 P. M. org.glassfish.hk2.classmodel.reflect.Parser awaitTermination
 INFORMACIÓN: visiting unvisited references
-may. 30, 2022 10:48:34 P. M. org.glassfish.hk2.classmodel.reflect.Parser awaitTermination
+jun. 01, 2022 11:16:04 P. M. org.glassfish.hk2.classmodel.reflect.Parser awaitTermination
 INFORMACIÓN: visiting unvisited references
-may. 30, 2022 10:48:34 P. M. org.eclipse.persistence.session./file:/tmp/gfembed2763522546777173925tmp/applications/2020e7a6-bf3f-4c32-95a6-229b56b4c8e4/WEB-INF/classes/_Baches_PU
+jun. 01, 2022 11:16:04 P. M. org.eclipse.persistence.session./file:/tmp/gfembed12724135745135464521tmp/applications/72f26fc0-17c6-4701-b782-14460051fa09/WEB-INF/classes/_Baches_PU
 INFORMACIÓN: EclipseLink, version: Eclipse Persistence Services - 2.7.9.payara-p1
-may. 30, 2022 10:48:34 P. M. com.sun.logging.LogDomains getResourceBundle
+jun. 01, 2022 11:16:04 P. M. com.sun.logging.LogDomains getResourceBundle
 INFORMACIÓN: Cannot find the resource bundle for the name com.sun.logging.enterprise.system.util for class com.sun.appserv.ClassLoaderUtil using jdk.internal.loader.ClassLoaders$AppClassLoader@3d4eac69
-may. 30, 2022 10:48:34 P. M. com.sun.appserv.ClassLoaderUtil releaseLoader
+jun. 01, 2022 11:16:04 P. M. com.sun.appserv.ClassLoaderUtil releaseLoader
 ADVERTENCIA: classloaderutil.errorReleasingLoader
 java.lang.reflect.InaccessibleObjectException: Unable to make field private final java.util.ArrayList jdk.internal.loader.URLClassPath.loaders accessible: module java.base does not "opens jdk.internal.loader" to unnamed module @593634ad
 	at java.base/java.lang.reflect.AccessibleObject.checkCanSetAccessible(AccessibleObject.java:340)
@@ -1010,13 +1010,13 @@ java.lang.reflect.InaccessibleObjectException: Unable to make field private fina
 	at org.jboss.arquillian.core.impl.EventContextImpl.invokeObservers(EventContextImpl.java:103)
 	at org.jboss.arquillian.core.impl.EventContextImpl.proceed(EventContextImpl.java:90)
 	at org.jboss.arquillian.test.impl.TestContextHandler.createClassContext(TestContextHandler.java:83)
-	at jdk.internal.reflect.GeneratedMethodAccessor74.invoke(Unknown Source)
+	at jdk.internal.reflect.GeneratedMethodAccessor75.invoke(Unknown Source)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
 	at org.jboss.arquillian.core.impl.ObserverImpl.invoke(ObserverImpl.java:86)
 	at org.jboss.arquillian.core.impl.EventContextImpl.proceed(EventContextImpl.java:95)
 	at org.jboss.arquillian.test.impl.TestContextHandler.createSuiteContext(TestContextHandler.java:69)
-	at jdk.internal.reflect.GeneratedMethodAccessor73.invoke(Unknown Source)
+	at jdk.internal.reflect.GeneratedMethodAccessor74.invoke(Unknown Source)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
 	at org.jboss.arquillian.core.impl.ObserverImpl.invoke(ObserverImpl.java:86)
@@ -1064,229 +1064,229 @@ java.lang.reflect.InaccessibleObjectException: Unable to make field private fina
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:562)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
 
-may. 30, 2022 10:48:34 P. M. com.sun.ejb.containers.BaseContainer initializeHome
-INFORMACIÓN: Portable JNDI names for EJB ObjetoEstadoBean: [java:global/2020e7a6-bf3f-4c32-95a6-229b56b4c8e4/ObjetoEstadoBean, java:global/2020e7a6-bf3f-4c32-95a6-229b56b4c8e4/ObjetoEstadoBean!com.mycompany.baches.control.ObjetoEstadoBean]
-may. 30, 2022 10:48:34 P. M. fish.payara.micro.cdi.extension.ClusteredCDIEventBusImpl postConstruct
+jun. 01, 2022 11:16:04 P. M. com.sun.ejb.containers.BaseContainer initializeHome
+INFORMACIÓN: Portable JNDI names for EJB ObjetoEstadoBean: [java:global/72f26fc0-17c6-4701-b782-14460051fa09/ObjetoEstadoBean, java:global/72f26fc0-17c6-4701-b782-14460051fa09/ObjetoEstadoBean!com.mycompany.baches.control.ObjetoEstadoBean]
+jun. 01, 2022 11:16:04 P. M. fish.payara.micro.cdi.extension.ClusteredCDIEventBusImpl postConstruct
 INFORMACIÓN: Clustered CDI Event bus initialized
-may. 30, 2022 10:48:34 P. M. org.glassfish.soteria.servlet.SamRegistrationInstaller onStartup
-INFORMACIÓN: Initializing Soteria null for context '/2020e7a6-bf3f-4c32-95a6-229b56b4c8e4'
-may. 30, 2022 10:48:34 P. M. com.sun.enterprise.web.WebApplication start
-INFORMACIÓN: Loading application [2020e7a6-bf3f-4c32-95a6-229b56b4c8e4] at [/2020e7a6-bf3f-4c32-95a6-229b56b4c8e4]
-may. 30, 2022 10:48:35 P. M. org.glassfish.deployment.admin.DeployCommand execute
-INFORMACIÓN: 2020e7a6-bf3f-4c32-95a6-229b56b4c8e4 was successfully deployed in 943 milliseconds.
+jun. 01, 2022 11:16:04 P. M. org.glassfish.soteria.servlet.SamRegistrationInstaller onStartup
+INFORMACIÓN: Initializing Soteria null for context '/72f26fc0-17c6-4701-b782-14460051fa09'
+jun. 01, 2022 11:16:05 P. M. com.sun.enterprise.web.WebApplication start
+INFORMACIÓN: Loading application [72f26fc0-17c6-4701-b782-14460051fa09] at [/72f26fc0-17c6-4701-b782-14460051fa09]
+jun. 01, 2022 11:16:05 P. M. org.glassfish.deployment.admin.DeployCommand execute
+INFORMACIÓN: 72f26fc0-17c6-4701-b782-14460051fa09 was successfully deployed in 1,241 milliseconds.
 ]]></system-err>
   </testcase>
-  <testcase name="testModificar" classname="com.mycompany.baches.resources.ObjetoEstadoResourceIT" time="0.059">
+  <testcase name="testModificar" classname="com.mycompany.baches.resources.ObjetoEstadoResourceIT" time="0.077">
     <system-out><![CDATA[
 
 *************************************************************
 Modificar ObjetoEstado
-2022-05-30 22:48:35 jdbc[3]: 
+2022-06-01 23:16:05 jdbc[3]: 
 /**/conn0.getClientInfo();
-2022-05-30 22:48:35 jdbc[3]: 
+2022-06-01 23:16:05 jdbc[3]: 
 /**/conn0.setAutoCommit(false);
-2022-05-30 22:48:35 jdbc[3]: 
+2022-06-01 23:16:05 jdbc[3]: 
 /**/PreparedStatement prep66 = conn0.prepareStatement("INSERT INTO public.objeto_estado (actual, fecha_alcanzado, observaciones, id_estado, id_objeto) VALUES (?, ?, ?, ?, ?)", 1003, 1007);
-2022-05-30 22:48:35 jdbc[3]: 
+2022-06-01 23:16:05 jdbc[3]: 
 /**/prep66.setBoolean(1, false);
-2022-05-30 22:48:35 jdbc[3]: 
-/**/prep66.setDate(2, Date.valueOf("2022-05-30"));
-2022-05-30 22:48:35 jdbc[3]: 
+2022-06-01 23:16:05 jdbc[3]: 
+/**/prep66.setDate(2, Date.valueOf("2022-06-01"));
+2022-06-01 23:16:05 jdbc[3]: 
 /**/prep66.setNull(3, 12);
-2022-05-30 22:48:35 jdbc[3]: 
+2022-06-01 23:16:05 jdbc[3]: 
 /**/prep66.setNull(4, 4);
-2022-05-30 22:48:35 jdbc[3]: 
+2022-06-01 23:16:05 jdbc[3]: 
 /**/prep66.setNull(5, -5);
-2022-05-30 22:48:35 jdbc[3]: 
+2022-06-01 23:16:05 jdbc[3]: 
 /**/prep66.executeUpdate();
-2022-05-30 22:48:35 lock: 3 shared read lock requesting for OBJETO_ESTADO 
-2022-05-30 22:48:35 lock: 3 shared read lock ok OBJETO_ESTADO 
-2022-05-30 22:48:35 jdbc[3]: 
-/*SQL l:118 #:1 t:1*/INSERT INTO public.objeto_estado (actual, fecha_alcanzado, observaciones, id_estado, id_objeto) VALUES (?, ?, ?, ?, ?) {1: FALSE, 2: DATE '2022-05-30', 3: NULL, 4: NULL, 5: NULL};
-2022-05-30 22:48:35 jdbc[3]: 
+2022-06-01 23:16:05 lock: 3 shared read lock requesting for OBJETO_ESTADO 
+2022-06-01 23:16:05 lock: 3 shared read lock ok OBJETO_ESTADO 
+2022-06-01 23:16:05 jdbc[3]: 
+/*SQL l:118 #:1 t:1*/INSERT INTO public.objeto_estado (actual, fecha_alcanzado, observaciones, id_estado, id_objeto) VALUES (?, ?, ?, ?, ?) {1: FALSE, 2: DATE '2022-06-01', 3: NULL, 4: NULL, 5: NULL};
+2022-06-01 23:16:05 jdbc[3]: 
 /**/prep66.close();
-2022-05-30 22:48:35 jdbc[3]: 
+2022-06-01 23:16:05 jdbc[3]: 
 /**/PreparedStatement prep67 = conn0.prepareStatement("CALL IDENTITY()", 1003, 1007);
-2022-05-30 22:48:35 jdbc[3]: 
+2022-06-01 23:16:05 jdbc[3]: 
 /**/ResultSet rs21 = prep67.executeQuery();
-2022-05-30 22:48:35 jdbc[3]: 
+2022-06-01 23:16:05 jdbc[3]: 
 /*SQL #:1*/CALL IDENTITY();
-2022-05-30 22:48:35 jdbc[3]: 
+2022-06-01 23:16:05 jdbc[3]: 
 /**/ResultSetMetaData rsMeta21 = rs21.getMetaData();
-2022-05-30 22:48:35 jdbc[3]: 
+2022-06-01 23:16:05 jdbc[3]: 
 /**/conn0.getCatalog();
-2022-05-30 22:48:35 jdbc[3]: 
+2022-06-01 23:16:05 jdbc[3]: 
 /**/rsMeta21.getColumnCount();
-2022-05-30 22:48:35 jdbc[3]: 
+2022-06-01 23:16:05 jdbc[3]: 
 /**/rsMeta21.getColumnCount();
-2022-05-30 22:48:35 jdbc[3]: 
+2022-06-01 23:16:05 jdbc[3]: 
 /**/rsMeta21.getColumnLabel(1);
-2022-05-30 22:48:35 jdbc[3]: 
+2022-06-01 23:16:05 jdbc[3]: 
 /**/rsMeta21.getColumnCount();
-2022-05-30 22:48:35 jdbc[3]: 
+2022-06-01 23:16:05 jdbc[3]: 
 /**/ResultSetMetaData rsMeta22 = rs21.getMetaData();
-2022-05-30 22:48:35 jdbc[3]: 
+2022-06-01 23:16:05 jdbc[3]: 
 /**/conn0.getCatalog();
-2022-05-30 22:48:35 jdbc[3]: 
+2022-06-01 23:16:05 jdbc[3]: 
 /**/rsMeta22.getColumnCount();
-2022-05-30 22:48:35 jdbc[3]: 
+2022-06-01 23:16:05 jdbc[3]: 
 /**/rs21.next();
-2022-05-30 22:48:35 jdbc[3]: 
+2022-06-01 23:16:05 jdbc[3]: 
 /**/rsMeta22.getColumnType(1);
-2022-05-30 22:48:35 jdbc[3]: 
+2022-06-01 23:16:05 jdbc[3]: 
 /**/rs21.getObject(1);
-2022-05-30 22:48:35 jdbc[3]: 
+2022-06-01 23:16:05 jdbc[3]: 
 /**/rs21.next();
-2022-05-30 22:48:35 jdbc[3]: 
+2022-06-01 23:16:05 jdbc[3]: 
 /**/rs21.close();
-2022-05-30 22:48:35 jdbc[3]: 
+2022-06-01 23:16:05 jdbc[3]: 
 /**/prep67.close();
-2022-05-30 22:48:35 jdbc[3]: 
+2022-06-01 23:16:05 jdbc[3]: 
 /**/conn0.setClientInfo(properties);
-2022-05-30 22:48:35 jdbc[3]: 
+2022-06-01 23:16:05 jdbc[3]: 
 /**/conn0.commit();
-2022-05-30 22:48:35 lock: 3 shared read lock unlock OBJETO_ESTADO 
-2022-05-30 22:48:35 jdbc[3]: 
+2022-06-01 23:16:05 lock: 3 shared read lock unlock OBJETO_ESTADO 
+2022-06-01 23:16:05 jdbc[3]: 
 /*SQL */COMMIT;
-2022-05-30 22:48:35 jdbc[3]: 
+2022-06-01 23:16:05 jdbc[3]: 
 /**/conn0.setAutoCommit(true);
-2022-05-30 22:48:35 jdbc[3]: 
+2022-06-01 23:16:05 jdbc[3]: 
 /**/conn0.commit();
-2022-05-30 22:48:35 jdbc[3]: 
+2022-06-01 23:16:05 jdbc[3]: 
 /*SQL */COMMIT;
 
 
 
-Modificado {"actual":false,"fechaAlcanzado":"2022-05-31T04:48:35.332Z[UTC]"}
+Modificado {"actual":false,"fechaAlcanzado":"2022-06-02T05:16:05.441Z[UTC]"}
 
 
 
 ]]></system-out>
   </testcase>
-  <testcase name="testCrear" classname="com.mycompany.baches.resources.ObjetoEstadoResourceIT" time="0.034">
+  <testcase name="testCrear" classname="com.mycompany.baches.resources.ObjetoEstadoResourceIT" time="0.042">
     <system-out><![CDATA[
 
 *************************************************************
 Crear ObjetoEstado
-2022-05-30 22:48:35 jdbc[3]: 
+2022-06-01 23:16:05 jdbc[3]: 
 /**/conn0.getClientInfo();
-2022-05-30 22:48:35 jdbc[3]: 
+2022-06-01 23:16:05 jdbc[3]: 
 /**/conn0.setAutoCommit(false);
-2022-05-30 22:48:35 jdbc[3]: 
+2022-06-01 23:16:05 jdbc[3]: 
 /**/PreparedStatement prep68 = conn0.prepareStatement("INSERT INTO public.objeto_estado (actual, fecha_alcanzado, observaciones, id_estado, id_objeto) VALUES (?, ?, ?, ?, ?)", 1003, 1007);
-2022-05-30 22:48:35 jdbc[3]: 
+2022-06-01 23:16:05 jdbc[3]: 
 /**/prep68.setBoolean(1, true);
-2022-05-30 22:48:35 jdbc[3]: 
-/**/prep68.setDate(2, Date.valueOf("2022-05-30"));
-2022-05-30 22:48:35 jdbc[3]: 
+2022-06-01 23:16:05 jdbc[3]: 
+/**/prep68.setDate(2, Date.valueOf("2022-06-01"));
+2022-06-01 23:16:05 jdbc[3]: 
 /**/prep68.setString(3, "nuevoRegistro");
-2022-05-30 22:48:35 jdbc[3]: 
+2022-06-01 23:16:05 jdbc[3]: 
 /**/prep68.setNull(4, 4);
-2022-05-30 22:48:35 jdbc[3]: 
+2022-06-01 23:16:05 jdbc[3]: 
 /**/prep68.setNull(5, -5);
-2022-05-30 22:48:35 jdbc[3]: 
+2022-06-01 23:16:05 jdbc[3]: 
 /**/prep68.executeUpdate();
-2022-05-30 22:48:35 lock: 3 shared read lock requesting for OBJETO_ESTADO 
-2022-05-30 22:48:35 lock: 3 shared read lock ok OBJETO_ESTADO 
-2022-05-30 22:48:35 jdbc[3]: 
-/*SQL l:118 #:1*/INSERT INTO public.objeto_estado (actual, fecha_alcanzado, observaciones, id_estado, id_objeto) VALUES (?, ?, ?, ?, ?) {1: TRUE, 2: DATE '2022-05-30', 3: 'nuevoRegistro', 4: NULL, 5: NULL};
-2022-05-30 22:48:35 jdbc[3]: 
+2022-06-01 23:16:05 lock: 3 shared read lock requesting for OBJETO_ESTADO 
+2022-06-01 23:16:05 lock: 3 shared read lock ok OBJETO_ESTADO 
+2022-06-01 23:16:05 jdbc[3]: 
+/*SQL l:118 #:1*/INSERT INTO public.objeto_estado (actual, fecha_alcanzado, observaciones, id_estado, id_objeto) VALUES (?, ?, ?, ?, ?) {1: TRUE, 2: DATE '2022-06-01', 3: 'nuevoRegistro', 4: NULL, 5: NULL};
+2022-06-01 23:16:05 jdbc[3]: 
 /**/prep68.close();
-2022-05-30 22:48:35 jdbc[3]: 
+2022-06-01 23:16:05 jdbc[3]: 
 /**/PreparedStatement prep69 = conn0.prepareStatement("CALL IDENTITY()", 1003, 1007);
-2022-05-30 22:48:35 jdbc[3]: 
+2022-06-01 23:16:05 jdbc[3]: 
 /**/ResultSet rs22 = prep69.executeQuery();
-2022-05-30 22:48:35 jdbc[3]: 
+2022-06-01 23:16:05 jdbc[3]: 
 /*SQL #:1*/CALL IDENTITY();
-2022-05-30 22:48:35 jdbc[3]: 
+2022-06-01 23:16:05 jdbc[3]: 
 /**/ResultSetMetaData rsMeta23 = rs22.getMetaData();
-2022-05-30 22:48:35 jdbc[3]: 
+2022-06-01 23:16:05 jdbc[3]: 
 /**/conn0.getCatalog();
-2022-05-30 22:48:35 jdbc[3]: 
+2022-06-01 23:16:05 jdbc[3]: 
 /**/rsMeta23.getColumnCount();
-2022-05-30 22:48:35 jdbc[3]: 
+2022-06-01 23:16:05 jdbc[3]: 
 /**/rsMeta23.getColumnCount();
-2022-05-30 22:48:35 jdbc[3]: 
+2022-06-01 23:16:05 jdbc[3]: 
 /**/rsMeta23.getColumnLabel(1);
-2022-05-30 22:48:35 jdbc[3]: 
+2022-06-01 23:16:05 jdbc[3]: 
 /**/rsMeta23.getColumnCount();
-2022-05-30 22:48:35 jdbc[3]: 
+2022-06-01 23:16:05 jdbc[3]: 
 /**/ResultSetMetaData rsMeta24 = rs22.getMetaData();
-2022-05-30 22:48:35 jdbc[3]: 
+2022-06-01 23:16:05 jdbc[3]: 
 /**/conn0.getCatalog();
-2022-05-30 22:48:35 jdbc[3]: 
+2022-06-01 23:16:05 jdbc[3]: 
 /**/rsMeta24.getColumnCount();
-2022-05-30 22:48:35 jdbc[3]: 
+2022-06-01 23:16:05 jdbc[3]: 
 /**/rs22.next();
-2022-05-30 22:48:35 jdbc[3]: 
+2022-06-01 23:16:05 jdbc[3]: 
 /**/rsMeta24.getColumnType(1);
-2022-05-30 22:48:35 jdbc[3]: 
+2022-06-01 23:16:05 jdbc[3]: 
 /**/rs22.getObject(1);
-2022-05-30 22:48:35 jdbc[3]: 
+2022-06-01 23:16:05 jdbc[3]: 
 /**/rs22.next();
-2022-05-30 22:48:35 jdbc[3]: 
+2022-06-01 23:16:05 jdbc[3]: 
 /**/rs22.close();
-2022-05-30 22:48:35 jdbc[3]: 
+2022-06-01 23:16:05 jdbc[3]: 
 /**/prep69.close();
-2022-05-30 22:48:35 jdbc[3]: 
+2022-06-01 23:16:05 jdbc[3]: 
 /**/conn0.setClientInfo(properties);
-2022-05-30 22:48:35 jdbc[3]: 
+2022-06-01 23:16:05 jdbc[3]: 
 /**/conn0.commit();
-2022-05-30 22:48:35 lock: 3 shared read lock unlock OBJETO_ESTADO 
-2022-05-30 22:48:35 jdbc[3]: 
+2022-06-01 23:16:05 lock: 3 shared read lock unlock OBJETO_ESTADO 
+2022-06-01 23:16:05 jdbc[3]: 
 /*SQL */COMMIT;
-2022-05-30 22:48:35 jdbc[3]: 
+2022-06-01 23:16:05 jdbc[3]: 
 /**/conn0.setAutoCommit(true);
-2022-05-30 22:48:35 jdbc[3]: 
+2022-06-01 23:16:05 jdbc[3]: 
 /**/conn0.commit();
-2022-05-30 22:48:35 jdbc[3]: 
+2022-06-01 23:16:05 jdbc[3]: 
 /*SQL */COMMIT;
 
 
 
-Creado {"actual":true,"fechaAlcanzado":"2022-05-31T04:48:35.391Z[UTC]","idObjetoEstado":8,"observaciones":"nuevoRegistro"}
+Creado {"actual":true,"fechaAlcanzado":"2022-06-02T05:16:05.517Z[UTC]","idObjetoEstado":8,"observaciones":"nuevoRegistro"}
 
 
 
 ]]></system-out>
   </testcase>
-  <testcase name="testEliminar" classname="com.mycompany.baches.resources.ObjetoEstadoResourceIT" time="0.034">
+  <testcase name="testEliminar" classname="com.mycompany.baches.resources.ObjetoEstadoResourceIT" time="0.049">
     <system-out><![CDATA[
 
 *************************************************************
 Eliminar ObjetoEstado
-2022-05-30 22:48:35 jdbc[3]: 
+2022-06-01 23:16:05 jdbc[3]: 
 /**/conn0.getClientInfo();
-2022-05-30 22:48:35 jdbc[3]: 
+2022-06-01 23:16:05 jdbc[3]: 
 /**/conn0.setAutoCommit(false);
-2022-05-30 22:48:35 jdbc[3]: 
+2022-06-01 23:16:05 jdbc[3]: 
 /**/PreparedStatement prep70 = conn0.prepareStatement("DELETE FROM public.objeto_estado WHERE (id_objeto_estado = ?)", 1003, 1007);
-2022-05-30 22:48:35 jdbc[3]: Table      :     potential plan item cost 10,280 index PUBLIC.OBJETO_ESTADO.tableScan
-2022-05-30 22:48:35 jdbc[3]: Table      :     potential plan item cost 230 index PUBLIC.PRIMARY_KEY_4
-2022-05-30 22:48:35 jdbc[3]: Table      :     potential plan item cost 10,100 index PUBLIC.FK_OBJETO_ESTADO_ID_OBJETO_INDEX_4
-2022-05-30 22:48:35 jdbc[3]: Table      :     potential plan item cost 10,100 index PUBLIC.FK_OBJETO_ESTADO_ID_ESTADO_INDEX_4
-2022-05-30 22:48:35 jdbc[3]: 
+2022-06-01 23:16:05 jdbc[3]: Table      :     potential plan item cost 10,280 index PUBLIC.OBJETO_ESTADO.tableScan
+2022-06-01 23:16:05 jdbc[3]: Table      :     potential plan item cost 230 index PUBLIC.PRIMARY_KEY_4
+2022-06-01 23:16:05 jdbc[3]: Table      :     potential plan item cost 10,100 index PUBLIC.FK_OBJETO_ESTADO_ID_OBJETO_INDEX_4
+2022-06-01 23:16:05 jdbc[3]: Table      :     potential plan item cost 10,100 index PUBLIC.FK_OBJETO_ESTADO_ID_ESTADO_INDEX_4
+2022-06-01 23:16:05 jdbc[3]: 
 /**/prep70.setLong(1, 3L);
-2022-05-30 22:48:35 jdbc[3]: 
+2022-06-01 23:16:05 jdbc[3]: 
 /**/prep70.executeUpdate();
-2022-05-30 22:48:35 lock: 3 shared read lock requesting for OBJETO_ESTADO 
-2022-05-30 22:48:35 lock: 3 shared read lock ok OBJETO_ESTADO 
-2022-05-30 22:48:35 jdbc[3]: 
+2022-06-01 23:16:05 lock: 3 shared read lock requesting for OBJETO_ESTADO 
+2022-06-01 23:16:05 lock: 3 shared read lock ok OBJETO_ESTADO 
+2022-06-01 23:16:05 jdbc[3]: 
 /*SQL l:61 #:1*/DELETE FROM public.objeto_estado WHERE (id_objeto_estado = ?) {1: 3};
-2022-05-30 22:48:35 jdbc[3]: 
+2022-06-01 23:16:05 jdbc[3]: 
 /**/prep70.close();
-2022-05-30 22:48:35 jdbc[3]: 
+2022-06-01 23:16:05 jdbc[3]: 
 /**/conn0.setClientInfo(properties);
-2022-05-30 22:48:35 jdbc[3]: 
+2022-06-01 23:16:05 jdbc[3]: 
 /**/conn0.commit();
-2022-05-30 22:48:35 lock: 3 shared read lock unlock OBJETO_ESTADO 
-2022-05-30 22:48:35 jdbc[3]: 
+2022-06-01 23:16:05 lock: 3 shared read lock unlock OBJETO_ESTADO 
+2022-06-01 23:16:05 jdbc[3]: 
 /*SQL */COMMIT;
-2022-05-30 22:48:35 jdbc[3]: 
+2022-06-01 23:16:05 jdbc[3]: 
 /**/conn0.setAutoCommit(true);
-2022-05-30 22:48:35 jdbc[3]: 
+2022-06-01 23:16:05 jdbc[3]: 
 /**/conn0.commit();
-2022-05-30 22:48:35 jdbc[3]: 
+2022-06-01 23:16:05 jdbc[3]: 
 /*SQL */COMMIT;
 
 
@@ -1297,38 +1297,38 @@ ID:3 eliminado con exito
 
 ]]></system-out>
   </testcase>
-  <testcase name="testContar" classname="com.mycompany.baches.resources.ObjetoEstadoResourceIT" time="0.128">
+  <testcase name="testContar" classname="com.mycompany.baches.resources.ObjetoEstadoResourceIT" time="0.137">
     <system-out><![CDATA[
 
 *************************************************************
 Contar
-2022-05-30 22:48:35 jdbc[3]: 
+2022-06-01 23:16:05 jdbc[3]: 
 /**/conn0.getClientInfo();
-2022-05-30 22:48:35 jdbc[3]: 
+2022-06-01 23:16:05 jdbc[3]: 
 /**/PreparedStatement prep71 = conn0.prepareStatement("SELECT COUNT(id_objeto_estado) FROM public.objeto_estado", 1003, 1007);
-2022-05-30 22:48:35 jdbc[3]: 
+2022-06-01 23:16:05 jdbc[3]: 
 /**/ResultSet rs23 = prep71.executeQuery();
-2022-05-30 22:48:35 jdbc[3]: 
+2022-06-01 23:16:05 jdbc[3]: 
 /*SQL #:1*/SELECT COUNT(id_objeto_estado) FROM public.objeto_estado;
-2022-05-30 22:48:35 jdbc[3]: 
+2022-06-01 23:16:05 jdbc[3]: 
 /**/ResultSetMetaData rsMeta25 = rs23.getMetaData();
-2022-05-30 22:48:35 jdbc[3]: 
+2022-06-01 23:16:05 jdbc[3]: 
 /**/conn0.getCatalog();
-2022-05-30 22:48:35 jdbc[3]: 
+2022-06-01 23:16:05 jdbc[3]: 
 /**/rsMeta25.getColumnCount();
-2022-05-30 22:48:35 jdbc[3]: 
+2022-06-01 23:16:05 jdbc[3]: 
 /**/rs23.next();
-2022-05-30 22:48:35 jdbc[3]: 
+2022-06-01 23:16:05 jdbc[3]: 
 /**/rsMeta25.getColumnType(1);
-2022-05-30 22:48:35 jdbc[3]: 
+2022-06-01 23:16:05 jdbc[3]: 
 /**/rs23.getLong(1);
-2022-05-30 22:48:35 jdbc[3]: 
+2022-06-01 23:16:05 jdbc[3]: 
 /**/rs23.next();
-2022-05-30 22:48:35 jdbc[3]: 
+2022-06-01 23:16:05 jdbc[3]: 
 /**/rs23.close();
-2022-05-30 22:48:35 jdbc[3]: 
+2022-06-01 23:16:05 jdbc[3]: 
 /**/prep71.close();
-2022-05-30 22:48:35 jdbc[3]: 
+2022-06-01 23:16:05 jdbc[3]: 
 /**/conn0.setClientInfo(properties);
 Se encontraron 7
 ]]></system-out>
