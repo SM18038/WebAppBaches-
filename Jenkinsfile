@@ -10,6 +10,7 @@ pipeline {
     }
     
 stages {
+        //Unit Test
         stage('Test') {
             steps {
                 withMaven(maven: 'maven') {
